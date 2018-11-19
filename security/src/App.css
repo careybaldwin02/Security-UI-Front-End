@@ -2,9 +2,6 @@
 
 .App {
   text-align: center;
-}
-
-.App-header {
   background-color: #333842;
   min-height: 100vh;
   display: flex;
@@ -33,17 +30,57 @@ form{
 input{
   margin: 15px;
   padding: 10px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 button{
   margin: 15px;
   padding: 10px;
-  width: 28%;
   font-size: 1.2rem;
   color:#333842;
   background-color: white;
 }
 
+
+/* main styles */
+.main-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 20%;
+}
+
+.main input{
+  width: 300px;
+  margin: 15px 20%;
+}
+
+
+
+/* navbar styles */
+.nav-bar{
+  padding-top: 20px;
+  height: 100vh;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:  #434a57;
+}
+
+.nav-bar button{
+  padding: 20px;
+  margin: 10px;
+  font-size: 15px;
+  width: 100px;
+  background-color: white;
+}
 
 

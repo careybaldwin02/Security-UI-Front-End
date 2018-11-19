@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
 
 class LoginPage extends Component {
@@ -78,8 +79,13 @@ class LoginPage extends Component {
           placeholder = "Password"
           />
 
-          <button type="submit" value="Log In" data-test="submit">Login
+          <Link to = {`/main`}>
+          <button 
+          type="submit" 
+          value="Log In" 
+          data-test="submit">Login
           </button>
+          </Link>
         </form>
       </div>
     );
