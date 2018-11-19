@@ -7,19 +7,34 @@ const NavBar = (props) => {
     return (
         <div className = "nav-bar">
             <Link to = {"/main"}>
-            <button className = "nav-button"> 
-                Main Page
-            </button>
+            <span>
+            <i className="fas fa-search"></i>
+            </span>
             </Link>
             <Link to={`/about`}>
-            <button className = "nav-button">
-                About     
-            </button>
+            <span>
+            <i className="fas fa-question"></i>
+            </span>
             </Link>
             <Link to={'/'}>
-            <button className = "nav-button">
-                Back to Login   
-            </button>
+            <span>
+            <i class="fas fa-star"></i>
+            </span>
+            </Link>
+            <Link to={'/'}>
+            <span>
+            <i className="fas fa-sign-in-alt"></i>
+            </span>
+            </Link>
+            <Link to={'/'}>
+            <span>
+            <i class="fas fa-phone"> 911</i>
+            </span>
+            </Link>
+            <Link to={'/'}>
+            <span>
+            <i class="far fa-user-circle"></i>
+            </span>
             </Link>
 
          </div> 

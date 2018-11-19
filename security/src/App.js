@@ -10,7 +10,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+      <div className = "header">
+        <h1>PERPTRAC</h1>
+        <i class="fab fa-product-hunt"></i>
+      </div>
         <Route exact path = "/" render = {props =>
         (< LoginPage {...props}
         />)}

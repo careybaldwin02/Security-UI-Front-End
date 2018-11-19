@@ -79,6 +79,15 @@ class LoginPage extends Component {
           placeholder = "Password"
           />
 
+          <div className = "remember"> 
+          <label for = "remember">Remember me </label>
+          <input 
+          type="checkbox" 
+          name="remember" 
+          value="remember" 
+          id = "remember"/>  
+          </div>
+
           <Link to = {`/main`}>
           <button 
           type="submit" 
