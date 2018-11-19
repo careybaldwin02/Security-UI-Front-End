@@ -51,9 +51,9 @@ class LoginPage extends Component {
 
     return (
       <div className="Login">
-      <h4>
+      <h2>
          Please enter your credentials below.
-        </h4>
+        </h2>
         <form onSubmit={this.handleSubmit}>
           {
             this.state.error &&
