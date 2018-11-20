@@ -75,7 +75,7 @@ button{
 
 .main input{
   width: 320px;
-  margin: 5px;
+  margin: 10px;
 }
 
 .inputs{
@@ -101,5 +101,51 @@ button{
 } 
 
 .fa-product-hunt{
-  color: rgb(27, 27, 136);
+  color: rgb(20, 20, 116);
+}
+
+/* PULSE */
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+  50% {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
+
+.faa-pulse.animated,
+.faa-pulse.animated-hover:hover,
+.faa-parent.animated-hover:hover > .faa-pulse {
+  -webkit-animation: pulse 1.5s linear infinite;
+  animation: pulse 1.5s linear infinite;
 }

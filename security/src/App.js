@@ -12,7 +12,7 @@ class App extends Component {
       <div className="App">
       <div className = "header">
         <h1>PERPTRAC</h1>
-        <i class="fab fa-product-hunt"></i>
+        <i class="fab fa-product-hunt faa-pulse animated"></i>
       </div>
         <Route exact path = "/" render = {props =>
         (< LoginPage {...props}
