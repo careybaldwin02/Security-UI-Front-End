@@ -6,6 +6,9 @@ const NavBar = (props) => {
 
     return (
         <div className = "nav-bar">
+            {/* <Link to = {"/main"}>
+            <i class="fas fa-home"></i>
+            </Link> */}
             <Link to = {"/main"}>
             <span>
             <i className="fas fa-search"></i>
@@ -16,7 +19,7 @@ const NavBar = (props) => {
             <i className="fas fa-question"></i>
             </span>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/favorites'}>
             <span>
             <i class="fas fa-star"></i>
             </span>
@@ -26,12 +29,12 @@ const NavBar = (props) => {
             <i className="fas fa-sign-in-alt"></i>
             </span>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/emergency'}>
             <span>
             <i class="fas fa-phone"> 911</i>
             </span>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/settings'}>
             <span>
             <i class="far fa-user-circle"></i>
             </span>

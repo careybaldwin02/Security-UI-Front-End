@@ -1,12 +1,14 @@
+
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 import NavBar from './NavBar.js';
+import GoogleMapsContainer from './map.js';
 
 import './App.css'
 
 
-class MainPage extends Component {
+class MainDemoLocation extends Component {
 
 
 render() {
@@ -16,27 +18,6 @@ render() {
             <NavBar />
         
             <div className = "main">
-
-            <h2>Search Options</h2>
-            <Link to = "/recent">
-            <button>View Recent Searches</button>
-            </Link>
-
-            <form>
-                 <div className = "inputs">
-                 <i class="far fa-user"> demo person search</i>
-                <input
-                placeholder = "Enter a name or home address of a person"
-                 />
-
-                <input
-                placeholder = "Select a time frame"
-                 />
-                </div>
-                <div className = "button-group">
-                 <button>Search By Person</button>
-                 </div>
-            </form>
 
             <form>
                 <div className = "inputs">
@@ -55,7 +36,8 @@ render() {
                  <button>Search By Location</button>
                  </div>
             </form>
-
+            
+            <GoogleMapsContainer />
 
             </div>
         </div>
@@ -64,4 +46,4 @@ render() {
 
 }
 
-export default MainPage;
+export default MainDemoLocation;
