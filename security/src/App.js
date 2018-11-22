@@ -9,7 +9,8 @@ import RecentSearches from './RecentSearches';
 import About from './About.js';
 import Privacy from './Privacy.js';
 import UserInfo from './UserInfo.js';
-import GoogleMapsContainer from './Map.js';
+import GoogleMapsContainer, { MapContainer } from './Map.js';
+import MainDemoLocation from './MainDemoLocation';
 
 
 
@@ -63,7 +64,7 @@ class App extends Component {
         />
 
         <Route path = "/location-demo" render={props =>
-        (<GoogleMapsContainer{...props}
+        (<MainDemoLocation{...props}
         />
         )}
         />

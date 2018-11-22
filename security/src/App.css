@@ -3,11 +3,11 @@
 .App {
   text-align: center;
   background-color: #333842;
-  min-height: 100vh;
+  min-height: 180vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: top;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -111,7 +111,7 @@ button{
 }
 
 .about-menu{
-  width: 70%;
+  width: 90%;
 }
 
 .outside-list{
@@ -192,15 +192,22 @@ button{
 .map-container{
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 80% !important;
-  height: auto;
-  border: 1px solid red;
-  padding: 10% 10px;
+  align-items: left;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-top: 20px;
+  padding-left: 10%;
 }
 
-.gm-styles{
-  width: 80%;
+.map-container p{
+  color: black;
+  font-size: 1rem;
+}
+
+.map-container a{
+  color: black;
+  font-size: 1rem;
+  text-decoration: underline;
 }
 
 /* navbar styles */

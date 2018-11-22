@@ -2,97 +2,70 @@ import React, { Component } from 'react';
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
 import NavBar from './NavBar';
 
-// import Paper from 'material-ui/Paper';
-// import Typography from 'material-ui/Typography';
-// import { typography } from 'material-ui/styles';
 
-class GoogleMapsContainer extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        showingInfoWindow: false,
-        activeMarker: {},
-        selectedPlace: {}
-      }
-      // binding this to event-handler functions
-      this.onMarkerClick = this.onMarkerClick.bind(this);
-      this.onMapClick = this.onMapClick.bind(this);
-    }
-    onMarkerClick = (props, marker, e) => {
+const mapStyles = {
+  width: '80%',
+  height: '80%',
+  display: 'flex',
+  flexWrap: 'wrap'
+};
+
+export class MapContainer extends Component {
+    state = {
+        showingInfoWindow: false,  //Hides or the shows the infoWindow
+        activeMarker: {},          //Shows the active marker upon click
+        selectedPlace: {}          //Shows the infoWindow to the selected place upon a marker
+      };
+
+    onMarkerClick = (props, marker, e) =>
+    this.setState({
+      selectedPlace: props,
+      activeMarker: marker,
+      showingInfoWindow: true
+    });
+
+  onClose = props => {
+    if (this.state.showingInfoWindow) {
       this.setState({
-        selectedPlace: props,
-        activeMarker: marker,
-        showingInfoWindow: true
+        showingInfoWindow: false,
+        activeMarker: null
       });
     }
-    onMapClick = (props) => {
-      if (this.state.showingInfoWindow) {
-        this.setState({
-          showingInfoWindow: false,
-          activeMarker: null
-        });
-      }
-    }
-    render() {
-      const style = {
-        width: '50vw',
-        height: '75vh',
-        'marginLeft': 'auto',
-        'marginRight': 'auto'
-      }
-      return (
-        <div className = "container">
-        <NavBar />
-        <div className = "map-container">
-        <Map
-          item
-          xs = { 12 }
-          google = { this.props.google }
-          onClick = { this.onMapClick }
-          zoom = { 14 }
-          initialCenter = {{ lat: 39.648209, lng: -75.711185 }}
+  };
+
+  render() {
+    return (
+      <Map
+        google={this.props.google}
+        zoom={14}
+        style={mapStyles}
+        initialCenter={{
+         lat: 41.7621,
+         lng: -72.7420
+        }}
         >
-          <Marker
-            onClick = { this.onMarkerClick }
-            title = { 'Changing Colors Garage' }
-            position = {{ lat: 39.648209, lng: -75.711185 }}
-            name = { 'Changing Colors Garage' }
-          />
-
-            <Marker
-            onClick = { this.onMarkerClick }
-            title = { 'Changing Colors Garage' }
-            position = {{ lat: 30.648209, lng: -60.711185 }}
-            name = { 'Changing Colors Garage' }
-          />
-          {/* <InfoWindow
-            marker = { this.state.activeMarker }
-            visible = { this.state.showingInfoWindow }
-          >
-            <Paper>
-              <Typography
-                variant = 'headline'
-                component = 'h4'
-              >
-                Changing Colors Garage
-              </Typography>
-              <Typography
-                component = 'p'
-              >
-                98G Albe Dr Newark, DE 19702 <br />
-                302-293-8627
-              </Typography>
-            </Paper>
-          </InfoWindow> */}
-        </Map>
+        <Marker
+        onClick={this.onMarkerClick}
+        name={'John Doe'}
+        />
+        <InfoWindow
+        marker={this.state.activeMarker}
+        visible={this.state.showingInfoWindow}
+        onClose={this.onClose}
+        >
+        <div>
+            <p>{this.state.selectedPlace.name}</p>
+            <a href='#'>learn more</a>
         </div>
-    </div>
-      );
-    }
+        </InfoWindow>
+        </Map>
+    );
   }
+}
 
-  //hide api_key prior to deployment
 
-  export default GoogleApiWrapper({
-      api: (process.env.API_KEY)
-  })(GoogleMapsContainer)
+export default GoogleApiWrapper(
+  (props)=> ({
+      apiKey: process.env.API_KEY
+    }
+))(MapContainer);
