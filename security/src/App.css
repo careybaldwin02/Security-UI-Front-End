@@ -179,8 +179,18 @@ button{
 .ca-container{
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left space-between;
   padding: 0 10%;
+}
+
+.user i{
+  margin-left: 10vw;
+}
+
+.user h2{
+  text-decoration: underline;
 }
 
 .user p{
@@ -225,6 +235,19 @@ button{
 .fa-home, .fa-search, .fa-question, .fa-star, .fa-sign-in-alt, .fa-user-circle{
   color: white;
 } 
+
+.search-hover {
+  border: 1px solid #ccc;
+  display: none;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.fa-search:hover .search-hover {
+  display: block;
+}
 
 .fa-phone{
   color: red;

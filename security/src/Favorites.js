@@ -25,7 +25,7 @@ class Favorites extends Component {
       </div>
 
       <div className = "dev-notes">
-        <p>
+        {/* <p>
         (Developer Notes: By default this page will automatically display the one of the
         three sub-categories that the subscriber most recently accessed, but the user can
         view an alternative sub-category by clicking on the column title. This page will
@@ -34,7 +34,7 @@ class Favorites extends Component {
         of the entries in the chart will open a search results page for that person or location.
         Please see the accompanying document of PerpTrac illustrations for rudimentary
         visualizations of the pages for the blacklist settings and chart.)
-        </p>
+        </p> */}
       </div>
 
       </div>

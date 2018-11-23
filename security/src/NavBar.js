@@ -40,6 +40,9 @@ const NavBar = (props) => {
             </span>
             </Link>
 
+            <div className = "search-hover">
+                click to search person or location
+            </div>
          </div> 
     )
 }
