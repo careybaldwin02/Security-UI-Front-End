@@ -95,6 +95,7 @@ class LoginPage extends Component {
           data-test="submit">Login
           </button>
           </Link>
+          <a href = "#">New users register here</a>
         </form>
       </div>
     );

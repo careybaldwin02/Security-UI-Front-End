@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+
 import NavBar from './NavBar';
 import MapsContainer from './Map.js';
 import './App.css';
@@ -13,11 +15,15 @@ class UserInfo extends Component {
 
         <div className = "ca-container">
 
-        <h2>User Information</h2>
-          <i class="fas fa-cog"> Settings</i>
+        <Link to = '/settings'>
+        <i class="far fa-user">Account Settings</i>
+        </Link>
+        <Link to = '/settings'>
+          <i class="fas fa-cog"> App Settings</i>
+        </Link>
         </div>
 
-        <p>Your location:</p>
+        <p>Your location (Toggle with List View)</p>
         <div className = "map-container">
 
             <MapsContainer />

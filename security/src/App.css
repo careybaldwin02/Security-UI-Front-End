@@ -3,7 +3,7 @@
 .App {
   text-align: center;
   background-color: #333842;
-  min-height: 180vh;
+  min-height: 200vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +13,14 @@
 }
 
 .header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.title-logo{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -146,9 +154,13 @@ button{
 
 /* privacy styles */
 
+
 .privacy p{
   text-align: left;
-  margin: 10px 10%;
+  padding: 30px;
+  margin: 15px 10%;
+  background: white;
+  color: black;
 }
 
 
@@ -197,6 +209,13 @@ button{
   text-align: left;
   margin: 10px 10%;
 }
+
+/* settings styles */
+.settings li{
+  list-style: none;
+}
+
+
 
 /* map styles */
 .map-container{
@@ -254,7 +273,7 @@ button{
 }
 
 .fa-product-hunt{
-  color: rgb(48, 48, 247);
+  color: rgb(83, 174, 248);
 }
 
 .fa-mouse{

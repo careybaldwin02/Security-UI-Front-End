@@ -16,11 +16,13 @@ class Favorites extends Component {
       <h2>Favorites</h2>
       
       <div className = "bws-container">
-      <h4 className = "bws">Blacklist 
+      <h4 className = "bws">Blacklist
       </h4>
       <h4 className = "bws">Whitelist 
       </h4>
       <h4 className = "bws">Saved Searches 
+      </h4>
+      <h4 className = "bws">List Control Panel
       </h4>
       </div>
 

@@ -2,7 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './App.css'
 
-const NavBar = (props) => {
+const NavBar = () => {
+    // this.state = {
+    //     open: '',
+    // }
+
+    // handleClick() {
+    //     this.setState({
+    //         open: !this.state.open
+    //     });
+    // }
 
     return (
         <div className = "nav-bar">
@@ -19,24 +28,16 @@ const NavBar = (props) => {
             <i className="fas fa-question"></i>
             </span>
             </Link>
-            <Link to={'/favorites'}>
-            <span>
-            <i class="fas fa-star"></i>
-            </span>
-            </Link>
+
             <Link to={'/'}>
             <span>
             <i className="fas fa-sign-in-alt"></i>
             </span>
             </Link>
-            <Link to={'/emergency'}>
+
+            <Link to={'/user'}>
             <span>
-            <i class="fas fa-phone"> 911</i>
-            </span>
-            </Link>
-            <Link to={'/settings'}>
-            <span>
-            <i class="far fa-user-circle"></i>
+            <i class="fas fa-ellipsis-v"></i>
             </span>
             </Link>
 
