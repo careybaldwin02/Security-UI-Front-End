@@ -12,8 +12,9 @@ class MainPage extends Component {
 render() {
     return(
         <div className = "container">
-
+            <div>
             <SideBar />
+            </div>
             <div id = "page-wrap">
 
             <div className = "main">
@@ -23,7 +24,7 @@ render() {
             <button>View Recent Searches</button>
             </Link>
 
-            <form>
+            <form >
                  <div className = "inputs">
                  <i class="far fa-user"> demo person search</i>
                 <input

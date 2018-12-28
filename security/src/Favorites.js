@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
-import NavBar from './NavBar.js';
+import SideBar from './SideBar.js';
 import './App.css';
 
 
@@ -10,8 +10,11 @@ class Favorites extends Component {
     return (
       <div className = "container">
 
-      <NavBar />
-  
+      <div>
+      <SideBar />
+      </div>
+      
+      <div className = "page-wrap">
       <div className="favorites">
       <h2>Favorites</h2>
       
@@ -38,7 +41,7 @@ class Favorites extends Component {
         visualizations of the pages for the blacklist settings and chart.)
         </p> */}
       </div>
-
+      </div>
       </div>
       </div>
     );

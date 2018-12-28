@@ -2,7 +2,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
-import NavBar from './NavBar.js';
+import SideBar from './SideBar.js';
 import MapsContainer from './Map.js';
 
 import './App.css'
@@ -14,7 +14,10 @@ class MainDemoLocation extends Component {
 render() {
     return(
         <div className = "container">
-            <NavBar />
+            <div>
+            <SideBar />
+            </div>
+            <div className = "page-wrap">
             <form>
                 <div className = "inputs">
 
@@ -26,12 +29,15 @@ render() {
                  />
                  </div>
                  <div className = "button-group">
-                 <button>Search By Location</button>
+                 <button>Search</button>
+
+               
                  </div>
             </form>
 
             <div className = "map-container">
             <MapsContainer />
+            </div>
         </div>
         </div>
     )

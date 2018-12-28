@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
-import NavBar from './NavBar';
 
 
 const mapStyles = {
@@ -66,6 +65,6 @@ export class MapContainer extends Component {
 
 export default GoogleApiWrapper(
   (props)=> ({
-      apiKey: process.env.API_KEY
+      apiKey: ('AIzaSyDmNug6tbEgfI-ooGAoUiF3ZUoL8xH0JHY')
     }
 ))(MapContainer);

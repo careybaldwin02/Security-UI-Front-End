@@ -21,6 +21,7 @@
 .header{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   justify-content: space-around;
@@ -315,6 +316,12 @@ button{
 .fa-home, .fa-search, .fa-question, .fa-star, .fa-sign-in-alt, .fa-user-circle{
   color: white;
 } 
+
+/* .favorites{
+  position: fixed;
+  left: 56px;
+  top: 35px;
+} */
 
 .search-hover {
   border: 1px solid #ccc;
