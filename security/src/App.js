@@ -13,33 +13,29 @@ import Settings from './Settings';
 import MainDemoLocation from './MainDemoLocation';
 import ControlPanel from './ControlPanel';
 
-
 class App extends Component {
   render() {
     return (
       <div className="App">
+      
       <div className = "header">
-      <Link to={'/emergency'}>
-          <div>
-            <i class="fas fa-phone"> 911</i>
-          </div>
+      <div className = "favorites">
+        <Link to={'/favorites'}>
+          <i class="fas fa-star"></i>
         </Link>
+        </div>
         <Link to ="/main">
         <div className = "title-logo">
         <h1>PERPTRAC</h1>
         <i class="fab fa-product-hunt faa-pulse animated"></i>
         </div>
         </Link>
-
+        <Link to={'/emergency'}>
           <div>
-          <Link to={'/favorites'}>
-            <i class="fas fa-star"></i>
-          </Link>
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-phone"> 911</i>
           </div>
+        </Link>
 
-
-          
       </div>
 
 
@@ -102,7 +98,6 @@ class App extends Component {
         />
         )}
         />
-
       </div>
     );
   }

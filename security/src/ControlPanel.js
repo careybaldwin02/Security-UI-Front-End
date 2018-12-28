@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import fig_10 from './img/fig_10.jpg';
-import NavBar from './NavBar';
+import SideBar from './SideBar';
 import './App.css';
 
 
@@ -8,7 +8,7 @@ class ControlPanel extends Component {
   render() {
     return (
     <div className = "container">
-            <NavBar />
+            <SideBar />
         <div className="settings">
 
         <h2>General Control Panel</h2>

@@ -1,6 +1,7 @@
 /* General styles */
 
 .App {
+  overflow: auto;
   text-align: center;
   background-color: #333842;
   min-height: 200vh;
@@ -10,6 +11,11 @@
   justify-content: top;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+#page-wrap {
+  text-align: center;
+  overflow: auto;
 }
 
 .header{
@@ -237,6 +243,61 @@ button{
   color: black;
   font-size: 1rem;
   text-decoration: underline;
+}
+
+/* menu styles */
+
+.bm-item {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 40px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+
+.bm-item:hover{
+  color: white;
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  left: 36px;
+  top: 38px;
+}
+
+.bm-burger-bars {
+  background: white;
+}
+
+.bm-cross-button{
+  height: 24px;
+  width: 24px;
+}
+
+.bm-cross{
+  background: white;
+}
+
+.bm-menu{
+  background: #333842;
+  padding: 3.5em 1.5em 0;
+  font-size: 1.45em;
+  opacity: .9;
+}
+
+.bm-morph-shape{
+  fill: #333842;
+}
+
+.bm-item-list{
+  color: #b8b7ad;
+}
+
+.bm-overlay{
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /* navbar styles */

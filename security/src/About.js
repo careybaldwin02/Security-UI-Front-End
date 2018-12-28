@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
-import NavBar from './NavBar.js';
+import SideBar from './SideBar.js';
 
 
 class About extends Component {
   render() {
     return (
     <div className = "container">
-    <NavBar />
+    <SideBar />
       <div className="about">
       <h1>About</h1>
       <div className = "about-menu">

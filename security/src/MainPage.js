@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
-import NavBar from './NavBar.js';
+import SideBar from './SideBar';
 
 import './App.css'
 
@@ -13,8 +13,9 @@ render() {
     return(
         <div className = "container">
 
-            <NavBar />
-        
+            <SideBar />
+            <div id = "page-wrap">
+
             <div className = "main">
 
             <h2>Search Options</h2>
@@ -67,6 +68,7 @@ render() {
             </div>
 
 
+            </div>
             </div>
         </div>
     )
