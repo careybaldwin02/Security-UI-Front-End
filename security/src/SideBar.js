@@ -6,9 +6,9 @@ export default props => {
     return (
         <Menu >
 
-            <a className = "menu-item" href = "/main">
+            <Link to = {"/main"}>
             <i className="fas fa-home"></i>
-            </a>
+            </Link>
 
             <a className = "menu-item" href = "/main">
             <i className="fas fa-search"></i>
