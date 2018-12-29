@@ -1,6 +1,16 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { GoogleApiWrapper, InfoWindow, Map, Marker } from 'google-maps-react';
+import Select from 'react-select';
 
+
+const mapOptions = [
+  {label: "Show All", value: 1},
+  {label: "Show Blacklist", value: 2},
+  {label: "Show Whitelist", value: 3},
+  {label: "Narrow Time Frame", value: 4},
+  {label: "Decrease Radius", value: 5},
+];
 
 const mapStyles = {
   width: '80%',
@@ -34,6 +44,21 @@ export class MapContainer extends Component {
 
   render() {
     return (
+      <div>
+        <div className = "map-control-buttons">
+        <Link to = "/map-controls">
+          <i className="fas fa-sliders"></i>
+        </Link>
+
+
+        {/* <Link to = "/map-filters">
+        <i class="fas fa-filter"></i>
+        </Link> */}
+
+            <Select options={ mapOptions } />
+
+        </div>
+
       <Map
         google={this.props.google}
         zoom={14}
@@ -58,6 +83,8 @@ export class MapContainer extends Component {
         </div>
         </InfoWindow>
         </Map>
+
+        </div>
     );
   }
 }

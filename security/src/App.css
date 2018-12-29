@@ -348,6 +348,13 @@ button{
   color: white;
 }
 
+.fa-sliders{
+  color: white;
+  margin: 10px;
+  display: flex;
+  align-self: right;
+}
+
 /* PULSE */
 
 @-webkit-keyframes pulse {

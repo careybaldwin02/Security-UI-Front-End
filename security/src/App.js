@@ -13,6 +13,7 @@ import Settings from './Settings';
 import MainDemoLocation from './MainDemoLocation';
 import ControlPanel from './ControlPanel';
 import MainHeader from './Header.js';
+import MapControls from './MapControls.js';
 
 class App extends Component {
   render() {
@@ -70,6 +71,12 @@ class App extends Component {
 
         <Route path = "/control-panel" render={props =>
         (<ControlPanel{...props}
+        />
+        )}
+        />
+
+        <Route path = "/map-controls" render={props =>
+        (<MapControls{...props}
         />
         )}
         />
