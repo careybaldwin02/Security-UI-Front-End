@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SideBar from './SideBar.js';
 import './App.css';
+import fig_9 from './img/fig_9.jpg';
 
 const MapControls = () => {
     return (
@@ -11,9 +12,7 @@ const MapControls = () => {
         </div>
         <div id = "page-wrap">
         <div className = "map-controls">
-        <p>
-            map controls here
-        </p>
+        <img src={fig_9} />
         </div>
         </div>
         </div>
