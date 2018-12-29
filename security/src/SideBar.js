@@ -6,7 +6,7 @@ export default props => {
     return (
         <Menu >
 
-            <Link to = {"/main"}>
+            <Link to = {"/main"} className = "menu-item">
             <i className="fas fa-home"></i>
             </Link>
 
