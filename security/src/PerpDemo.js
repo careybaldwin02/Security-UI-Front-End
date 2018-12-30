@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import ControlPanel from './ControlPanel';
-
 import SideBar from './SideBar.js';
 import './App.css';
 
@@ -14,24 +12,26 @@ class Settings extends Component {
         <SideBar />
         </div>
         <div className = "page-wrap">
-        <div className="settings">
+        <div className="perp-demo">
 
-        <h2>Settings</h2>
+        <h2>Profile of John Doe</h2>
             <ul>
-                <li>
-                    <Link to = "/control-panel">
-                    <a href="#">Control Panel</a>  
-                    </Link>                 
+                <li>    
+                    <a href="#">Current Location</a>               
+                </li>
+                <li>    
+                    <a href="#">Share Information</a>               
                 </li>
                 <li>
                     {/* link to list of names, one name links to black list detail fig 8*/}
-                    <a href="#">Access your Blacklist</a>   
+                    <a href="#">Add to Blacklist</a>   
                 </li>
                     {/* link to list of names */}
-                    <a href="#">Access your Whitelist</a>
+                    <a href="#">Add Whitelist</a>
                 <li>
                     {/* link to list control */}
-                    <a href="#">Access your List Controls</a>
+                    <i class="fas fa-shopping-cart"></i>
+                    <a href="#"> Purchase Information</a>
                 </li>
             </ul>
 

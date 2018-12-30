@@ -10,9 +10,9 @@ export default props => {
             <i className="fas fa-home"></i>
             </Link> */}
 
-            <a className = "menu-item" href = "/main">
+            {/* <a className = "menu-item" href = "/main">
             <i className="fas fa-home"></i>
-            </a>            
+            </a>             */}
 
             <a className = "menu-item" href = "/main">
             <i className="fas fa-search"></i>
@@ -28,6 +28,10 @@ export default props => {
 
             <a className = "menu-item" href = "/user">
             <i class="far fa-user-circle"></i>
+            </a>
+
+            <a className = "menu-item" href = "/settings">
+            <i class="fas fa-cog"></i>
             </a>
 
         </Menu>

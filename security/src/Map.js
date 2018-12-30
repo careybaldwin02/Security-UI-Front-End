@@ -46,6 +46,8 @@ export class MapContainer extends Component {
     return (
       <div>
         <div className = "map-control-buttons">
+
+
         <Link to = "/map-controls">
         <button className = "map-controls">
           Map Controls<i className="fas fa-sliders"></i>
@@ -59,6 +61,11 @@ export class MapContainer extends Component {
 
             <Select options={ mapOptions } className= "selector"/>
 
+          <span className = "switch-view">
+          <h5>
+            Switch to List View
+          </h5>
+          </span>
 
         </div>
 

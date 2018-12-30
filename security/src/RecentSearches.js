@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
-import NavBar from './NavBar';
+import { Route, Link } from 'react-router-dom';
+import SideBar from './SideBar';
 
 import './App.css';
 
@@ -9,10 +9,15 @@ class RecentSearches extends Component {
   render() {
     return (
     <div className = "container">
-            <NavBar />
+        <div>
+            <SideBar />
+        </div>
+        <div className = "page-wrap">
       <div className="recent">
         <div className = "recent-item">
+        <Link to = {'/perp-demo'}>
         <button>view</button>
+        </Link>
         <p>John Doe, 406 E. Jefferson St. Ann Arbor MI 48104            
         </p>
         
@@ -36,7 +41,7 @@ class RecentSearches extends Component {
         <p>
             Massachusetts
         </p>
-        
+        </div>
         </div>
       </div>
       </div>

@@ -20,7 +20,7 @@ render() {
             <div className = "page-wrap">
             <form>
                 <div className = "inputs">
-
+                <h5>Please Enter a Location</h5>
                 <input
                 placeholder = "West Hartford, CT"
                  />

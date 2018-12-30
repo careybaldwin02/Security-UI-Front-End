@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import NavBar from './NavBar';
+import SideBar from './SideBar';
 import MapsContainer from './Map.js';
 import './App.css';
 
@@ -10,10 +10,12 @@ class UserInfo extends Component {
   render() {
     return (
     <div className = "container">
-            <NavBar />
-        <div className="user">
 
-        <div className = "ca-container">
+        <div>
+            <SideBar />
+        </div>
+        <div className = "page-wrap">
+        {/* <div className = "ca-container">
 
         <Link to = '/settings'>
         <i class="far fa-user">Account Settings</i>
@@ -21,11 +23,23 @@ class UserInfo extends Component {
         <Link to = '/settings'>
           <i class="fas fa-cog"> App Settings</i>
         </Link>
-        </div>
+        </div> */}
 
-        <p>Your location (Toggle with List View)</p>
+        <div className = "user">
+        <h2 className = "account-settings">Account Settings</h2>
+        <ul>
+            <li>
+                <Link to = "/manage-subscription">
+                <a href="#">Manage Subscription</a>  
+                </Link>                 
+            </li>
+            <li>
+                {/* link to list of names, one name links to black list detail fig 8*/}
+                <a href="#">Parental Controls</a>   
+            </li>
+        </ul>
+
         <div className = "map-container">
-
             <MapsContainer />
         </div>
 
@@ -36,9 +50,8 @@ class UserInfo extends Component {
         app’s search parameters. This page will display as a tabular chart. Please see the
         accompanying document of PerpTrac illustrations for a rudimentary visualization of
         the basic settings page.)</p> */}
-        
         </div>
-
+        </div>
       </div>
     );
   }

@@ -15,7 +15,7 @@ render() {
             <div>
             <SideBar />
             </div>
-            <div id = "page-wrap">
+            <div className = "page-wrap">
 
             <div className = "main">
 
@@ -23,7 +23,7 @@ render() {
             <Link to = "/recent">
             <button>View Recent Searches</button>
             </Link>
-            <Link to = "/recent">
+            <Link to = "/person-demo">
             <button>Search by Person</button>
             </Link>
             <Link to = "/location-demo">
@@ -64,15 +64,15 @@ render() {
                  </div>
             </form> */}
 
-            <div className = "dev-notes">
-                {/* <p>
+            {/* <div className = "dev-notes">
+                <p>
                 (Developer Notes: Clicking on a search button or search fields will automatically
                 populate the corresponding field with a preprogrammed entry. Clicking on a search
                 button at that point will open the search results page. In the toolbar, the circled “P”
                 icon indicates that the app is actively conducting background scanning for nearby
                 phones, though this is not a feature with which the user can interface.)
-                </p> */}
-            </div>
+                </p>
+            </div> */}
 
 
             </div>

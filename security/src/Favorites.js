@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 import SideBar from './SideBar.js';
 import './App.css';
@@ -28,6 +28,37 @@ class Favorites extends Component {
       <h4 className = "bws">List Control Panel
       </h4>
       </div>
+      
+      <div className = "recent">
+        <div className = "recent-item">
+        <Link to = {'/perp-demo'}>
+        <button>view</button>
+        </Link>
+        <p>John Doe, 406 E. Jefferson St. Ann Arbor MI 48104            
+        </p>
+        
+        </div>
+        <div className = "recent-item">
+        <button>view</button>
+        <p>
+            06117
+        </p>
+   
+        </div>
+        <div className = "recent-item">
+        <button>view</button>
+        <p>
+            West Hartford, CT
+        </p>
+
+        </div>
+        <div className = "recent-item">
+        <button>view</button>
+        <p>
+            Massachusetts
+        </p>
+        </div>
+        </div>
 
       <div className = "dev-notes">
         {/* <p>

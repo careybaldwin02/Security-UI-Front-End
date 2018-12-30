@@ -221,6 +221,11 @@ button{
   margin: 10px 10%;
 }
 
+.user ul{
+  list-style: none;
+  justify-content: left;
+}
+
 /* settings styles */
 .settings li{
   list-style: none;
@@ -258,16 +263,14 @@ button{
 
 .selector{
   width: 150px;
-  height: 40px;
+  min-height: 30px;
   margin: 10px;
-  margin-bottom: 35px;
   display: inline-block;
   align-items: right;
   color: #333842;
 }
 
 .css-vj8t7z{
-  min-height: 30px;
   margin: 10px;
 }
 
@@ -283,6 +286,11 @@ button{
   color: #333842;
   font-size: 1.6rem;
   margin: 10px;
+}
+
+.switch-view{
+  align-self: bottom;
+  margin-left: 20vw;
 }
 
 /* menu styles */
@@ -388,6 +396,18 @@ button{
 }
 
 
+/* Perp Demo Styles */
+
+.perp-demo ul{
+  list-style: none;
+  justify-content: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.perp-demo li{
+  padding: 10px;
+}
 
 /* PULSE */
 

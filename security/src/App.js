@@ -11,9 +11,11 @@ import Privacy from './Privacy.js';
 import UserInfo from './UserInfo.js';
 import Settings from './Settings';
 import MainDemoLocation from './MainDemoLocation';
+import MainDemoPerson from './MainDemoPerson';
 import ControlPanel from './ControlPanel';
 import MainHeader from './Header.js';
 import MapControls from './MapControls.js';
+import PerpDemo from './PerpDemo.js';
 
 class App extends Component {
   render() {
@@ -86,6 +88,19 @@ class App extends Component {
         />
         )}
         />
+
+        <Route path = "/person-demo" render={props =>
+        (<MainDemoPerson{...props}
+        />
+        )}
+        />
+
+        <Route path = "/perp-demo" render={props =>
+        (<PerpDemo{...props}
+        />
+        )}
+        />
+
       </div>
     );
   }

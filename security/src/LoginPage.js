@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import SideBar from './SideBar';
 import './App.css';
 
 class LoginPage extends Component {
@@ -51,6 +52,11 @@ class LoginPage extends Component {
     // NOTE: use data-attributes for easier E2E testing
 
     return (
+      <div className = "container">
+      <div>
+      <SideBar />
+  </div>
+  <div className = "page-wrap">
       <div className="Login">
       <h2>
          Please enter your credentials below.
@@ -97,6 +103,8 @@ class LoginPage extends Component {
           </Link>
           <a href = "#">New users register here</a>
         </form>
+      </div>
+      </div>
       </div>
     );
   }
