@@ -87,6 +87,7 @@ button{
   background-color: white;
 }
 
+
 /* main styles */
 .main-container{
   display: flex;
@@ -116,6 +117,9 @@ button{
   flex-direction: column;
 }
 
+.main button{
+  width: 200px;
+}
 
 /* about styles */
 
@@ -246,6 +250,41 @@ button{
   text-decoration: underline;
 }
 
+.map-control-buttons{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.selector{
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  margin-bottom: 35px;
+  display: inline-block;
+  align-items: right;
+  color: #333842;
+}
+
+.css-vj8t7z{
+  min-height: 30px;
+  margin: 10px;
+}
+
+.css-1492t68{
+  padding: 5px;
+}
+
+.map-controls{
+  align-content: center;
+}
+
+.fa-sliders{
+  color: #333842;
+  font-size: 1.6rem;
+  margin: 10px;
+}
+
 /* menu styles */
 
 .bm-item {
@@ -348,12 +387,7 @@ button{
   color: white;
 }
 
-.fa-sliders{
-  color: white;
-  margin: 10px;
-  display: flex;
-  align-self: right;
-}
+
 
 /* PULSE */
 

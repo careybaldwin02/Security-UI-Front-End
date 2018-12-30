@@ -23,8 +23,14 @@ render() {
             <Link to = "/recent">
             <button>View Recent Searches</button>
             </Link>
+            <Link to = "/recent">
+            <button>Search by Person</button>
+            </Link>
+            <Link to = "/location-demo">
+            <button>Search by Location</button>
+            </Link>
 
-            <form >
+            {/* <form >
                  <div className = "inputs">
                  <i class="far fa-user"> demo person search</i>
                 <input
@@ -56,7 +62,7 @@ render() {
                  <div className = "button-group">
                  <button>Search By Location</button>
                  </div>
-            </form>
+            </form> */}
 
             <div className = "dev-notes">
                 {/* <p>
