@@ -2,13 +2,16 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 
-import NavBar from './NavBar.js';
+import SideBar from './SideBar.js';
 
 class Privacy extends Component {
   render() {
     return (
-    <div className = "container">
-        <NavBar />
+      <div className = "container">
+      <div>
+      <SideBar />
+      </div>
+      <div className = "page-wrap">
       <div className="privacy">
        
         <h2>PRIVACY POLICY</h2>
@@ -204,6 +207,7 @@ class Privacy extends Component {
         application of personal-data mining while providing an
         invaluable public service.
         </p>
+        </div>
         </div>
         </div>
 

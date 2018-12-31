@@ -59,13 +59,15 @@ export class MapContainer extends Component {
         <i class="fas fa-filter"></i>
         </Link> */}
 
-            <Select options={ mapOptions } className= "selector"/>
+          <Select options={ mapOptions } className= "selector"/>
 
-          <span className = "switch-view">
+          <Link to = {'/location-chart'}>
+          <div className = "switch-view">
           <h5>
-            Switch to List View
+            Switch to Chart View
           </h5>
-          </span>
+          </div>
+          </Link>
 
         </div>
 

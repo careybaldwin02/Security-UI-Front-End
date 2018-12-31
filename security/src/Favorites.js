@@ -16,49 +16,23 @@ class Favorites extends Component {
       
       <div className = "page-wrap">
       <div className="favorites">
-      <h2>Favorites</h2>
+      <h1>Favorites</h1>
       
       <div className = "bws-container">
+      <Link to = {"/blacklist"}>
       <h4 className = "bws">Blacklist
       </h4>
+      </Link>
+      <Link to = {"/whitelist"}>
       <h4 className = "bws">Whitelist 
       </h4>
+      </Link>
+      <Link to = {"/saved"}>
       <h4 className = "bws">Saved Searches 
       </h4>
-      <h4 className = "bws">List Control Panel
-      </h4>
+      </Link>
       </div>
       
-      <div className = "recent">
-        <div className = "recent-item">
-        <Link to = {'/perp-demo'}>
-        <button>view</button>
-        </Link>
-        <p>John Doe, 406 E. Jefferson St. Ann Arbor MI 48104            
-        </p>
-        
-        </div>
-        <div className = "recent-item">
-        <button>view</button>
-        <p>
-            06117
-        </p>
-   
-        </div>
-        <div className = "recent-item">
-        <button>view</button>
-        <p>
-            West Hartford, CT
-        </p>
-
-        </div>
-        <div className = "recent-item">
-        <button>view</button>
-        <p>
-            Massachusetts
-        </p>
-        </div>
-        </div>
 
       <div className = "dev-notes">
         {/* <p>

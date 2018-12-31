@@ -16,6 +16,11 @@ import ControlPanel from './ControlPanel';
 import MainHeader from './Header.js';
 import MapControls from './MapControls.js';
 import PerpDemo from './PerpDemo.js';
+import SavedSearches from './SavedSearches';
+import BlackList from './BlackList';
+import LocationChart from './LocationChart';
+import PersonChart from './PersonChart';
+
 
 class App extends Component {
   render() {
@@ -43,6 +48,18 @@ class App extends Component {
 
         <Route path = "/recent" render={props =>
         (<RecentSearches {...props}
+        />
+        )}
+        />
+
+        <Route path = "/blacklist" render={props =>
+        (<BlackList {...props}
+        />
+        )}
+        />
+
+        <Route path = "/saved" render={props =>
+        (<SavedSearches {...props}
         />
         )}
         />
@@ -94,6 +111,19 @@ class App extends Component {
         />
         )}
         />
+
+        <Route path = "/location-chart" render={props =>
+        (<LocationChart{...props}
+        />
+        )}
+        />
+
+        <Route path = "/person-chart" render={props =>
+        (<PersonChart{...props}
+        />
+        )}
+        />
+
 
         <Route path = "/perp-demo" render={props =>
         (<PerpDemo{...props}

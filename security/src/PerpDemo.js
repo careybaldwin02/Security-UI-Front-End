@@ -27,7 +27,7 @@ class Settings extends Component {
                     <a href="#">Add to Blacklist</a>   
                 </li>
                     {/* link to list of names */}
-                    <a href="#">Add Whitelist</a>
+                    <a href="#">Add to Whitelist</a>
                 <li>
                     {/* link to list control */}
                     <i class="fas fa-shopping-cart"></i>

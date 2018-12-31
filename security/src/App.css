@@ -1,5 +1,9 @@
 /* General styles */
 
+h2{
+  text-decoration: underline;
+}
+
 .App {
   overflow: auto;
   text-align: center;
@@ -158,9 +162,28 @@ button{
 /* favorites styles */
 .bws-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-evenly;
   padding: 0 10%;
+}
+
+/* blacklist styles */
+
+.blacklist{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blacklist-item{
+  width: 60%;
+  background-color: #414653;
+  margin: 15px;
+}
+
+.e-d{
+  width: 150px;
 }
 
 /* privacy styles */
@@ -291,6 +314,27 @@ button{
 .switch-view{
   align-self: bottom;
   margin-left: 20vw;
+}
+
+.switch-view h5{
+  font-size: 16px;;
+  color: white;
+}
+
+/* chart styles */
+
+.chart-control-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.chart-control-buttons button{
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  align-content: center;
+  vertical-align: center;
 }
 
 /* menu styles */
