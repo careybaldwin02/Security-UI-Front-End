@@ -15,7 +15,7 @@ export default props => {
             </a>             */}
 
             <a className = "menu-item" href = "/main">
-            <i className="fas fa-search"></i>
+            search
             </a>
 
             <a className = "menu-item" href = "/about">
