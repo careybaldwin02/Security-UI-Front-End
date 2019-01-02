@@ -18,8 +18,11 @@ import MapControls from './MapControls.js';
 import PerpDemo from './PerpDemo.js';
 import SavedSearches from './SavedSearches';
 import BlackList from './BlackList';
+import WhiteList from './WhiteList';
 import LocationChart from './LocationChart';
 import PersonChart from './PersonChart';
+import ChartControls from './ChartControls';
+import BlackListDemo from './BlackListDemo';
 
 
 class App extends Component {
@@ -54,6 +57,12 @@ class App extends Component {
 
         <Route path = "/blacklist" render={props =>
         (<BlackList {...props}
+        />
+        )}
+        />
+
+        <Route path = "/whitelist" render={props =>
+        (<WhiteList {...props}
         />
         )}
         />
@@ -118,6 +127,12 @@ class App extends Component {
         )}
         />
 
+        <Route path = "/chart-controls" render={props =>
+        (<ChartControls{...props}
+        />
+        )}
+        />
+
         <Route path = "/person-chart" render={props =>
         (<PersonChart{...props}
         />
@@ -130,6 +145,14 @@ class App extends Component {
         />
         )}
         />
+
+        <Route path = "/blacklist-demo" render={props =>
+        (<BlackListDemo{...props}
+        />
+        )}
+        />
+
+        
 
       </div>
     );

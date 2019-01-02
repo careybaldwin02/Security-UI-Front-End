@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SideBar from './SideBar.js';
 import './App.css';
-import mapcontrols from './img/mapcontrols.jpg';
+import configcontrol from './img/configcontrol.jpg';
 
-const MapControls = () => {
+const ChartControls = () => {
     return (
         <div className = "container">
         <div>
@@ -12,11 +12,11 @@ const MapControls = () => {
         </div>
         <div id = "page-wrap">
         <div className = "map-controls">
-        <img src={mapcontrols} />
+        <img src={configcontrol} />
         </div>
         </div>
         </div>
 
     )};
 
-export default MapControls;
+export default ChartControls;

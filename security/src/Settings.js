@@ -25,10 +25,14 @@ class Settings extends Component {
                 </li>
                 <li>
                     {/* link to list of names, one name links to black list detail fig 8*/}
-                    <a href="#">Access your Blacklist</a>   
+                    <Link to = '/blacklist'>
+                    <a href="#">Access your Blacklist</a>
+                    </Link>   
                 </li>
                     {/* link to list of names */}
+                    <Link to = '/whitelist'>
                     <a href="#">Access your Whitelist</a>
+                    </Link>
                 <li>
                     {/* link to list control */}
                     <a href="#">Access your List Controls</a>

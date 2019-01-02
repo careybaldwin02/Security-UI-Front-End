@@ -327,6 +327,8 @@ button{
   display: flex;
   align-items: center;
   justify-content: left;
+  margin-left: 16%;
+  margin-top: 10px;
 }
 
 .chart-control-buttons button{

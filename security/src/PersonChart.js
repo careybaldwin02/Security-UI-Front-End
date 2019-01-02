@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 import SideBar from './SideBar.js';
-
+import chart from './img/chart.jpg';
 import './App.css'
 
 
@@ -50,10 +50,15 @@ render() {
                 Filters<i class="fas fa-filter"></i>
             </button>
             </Link>
+            <Link to = "/person-demo">
+            <h4>
+                Switch to Map View
+            </h4>
+            </Link>
             </div>
-            <h1>
-                Chart
-            </h1>
+            <div className = "chart">
+                 <img src={chart} />
+             </div>
             </div>
         </div>
         </div>

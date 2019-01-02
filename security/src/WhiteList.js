@@ -4,53 +4,39 @@ import SideBar from './SideBar';
 import './App.css';
 
 
-class BlackList extends Component {
+class WhiteList extends Component {
   render() {
     return (
     <div className = "container">
             <SideBar />
         <div className="blacklist">
 
-        <h2>Black List</h2>
+        <h2>White List</h2>
         <div className = "blacklist-item">
         <h4> 
-            Jack the Ripper         
+            Mother Teresa        
         </h4>
-        <Link to = {'/blacklist-demo'}>
         <button>edit</button>
         <button className = "e-d">enable/disable</button>
-        </Link>
         </div>
 
         <div className = "blacklist-item">
         <h4> 
-            Al Capone      
+            Mr. Rodgers   
         </h4>
-        <Link to = {'/blacklist-demo'}>
         <button>edit</button>
         <button className = "e-d">enable/disable</button>
-        </Link>
         </div>
 
         <div className = "blacklist-item">
         <h4> 
-            Bonny and Clyde      
+            Aunt Janice
         </h4>
-        <Link to = {'/blacklist-demo'}>
-        <button>edit</button>
-        <button className = "e-d">enable/disable</button>
-        </Link>
-        </div>
 
-        <div className = "blacklist-item">
-        <h4> 
-            Charles Manson        
-        </h4>
-        <Link to = {'/blacklist-demo'}>
         <button>edit</button>
         <button className = "e-d">enable/disable</button>
-        </Link>
-        </div>   
+
+        </div> 
         </div>
 
       </div>
@@ -58,4 +44,4 @@ class BlackList extends Component {
   }
 }
 
-export default BlackList;
+export default WhiteList;

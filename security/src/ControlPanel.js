@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import fig_10 from './img/fig_10.jpg';
+import configcontrol from './img/configcontrol.jpg';
 import SideBar from './SideBar';
 import './App.css';
 
@@ -12,7 +12,7 @@ class ControlPanel extends Component {
         <div className="settings">
 
         <h2>General Control Panel</h2>
-        <img src={fig_10} />
+        <img src={configcontrol} />
         
         </div>
 
