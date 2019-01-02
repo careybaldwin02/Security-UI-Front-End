@@ -6,33 +6,33 @@ export default props => {
     return (
         <Menu >
 
-            <Link to = {"/main"} className = "menu-item">
+            {/* <Link to = {"/main"} className = "menu-item">
             <i className="fas fa-home"></i>
-            </Link>
+            </Link> */}
 
             {/* <a className = "menu-item" href = "/main">
             <i className="fas fa-home"></i>
             </a>             */}
 
-            <a className = "menu-item" href = "/main">
-            search
-            </a>
-            
-            <a className = "menu-item" href = "/about">
+            <Link to = {"/main"}>
+            <i className="fas fa-search"></i>
+            </Link>
+
+            <Link to = {"/about"}>
             <i className="fas fa-question"></i>
-            </a>
+            </Link>
 
-            <a className = "menu-item" href = "/">
+            <Link to = {"/"}>
             <i className="fas fa-sign-in-alt"></i>
-            </a>
+            </Link>
 
-            <a className = "menu-item" href = "/user">
+            <Link to = {"/user"}>
             <i class="far fa-user-circle"></i>
-            </a>
+            </Link>
 
-            <a className = "menu-item" href = "/settings">
+            <Link to = {"/settings"}>
             <i class="fas fa-cog"></i>
-            </a>
+            </Link>
 
         </Menu>
     )
