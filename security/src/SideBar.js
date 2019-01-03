@@ -5,15 +5,6 @@ import { Link } from 'react-router-dom';
 export default props => {
     return (
         <Menu >
-
-            {/* <Link to = {"/main"} className = "menu-item">
-            <i className="fas fa-home"></i>
-            </Link> */}
-
-            {/* <a className = "menu-item" href = "/main">
-            <i className="fas fa-home"></i>
-            </a>             */}
-
             <Link to = {"/main"}>
             <i className="fas fa-search"></i>
             </Link>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SideBar from './SideBar.js';
 import './App.css';
-import searchcontrol from './img/searchcontrol.jpg';
+import searchcontrols from './img/searchcontrols.jpg';
 
 const ChartControls = () => {
     return (
