@@ -205,7 +205,6 @@ button{
 
 /* privacy styles */
 
-
 .privacy p{
   text-align: left;
   padding: 30px;
@@ -282,57 +281,58 @@ button{
   padding-left: 10%;
 }
 
-.map-container p{
-  color: black;
-  font-size: 1rem;
-}
-
-.map-container a{
-  color: black;
-  font-size: 1rem;
-  text-decoration: underline;
+.map-control-bar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
 }
 
 .map-control-buttons{
   display: flex;
-  justify-content: right;
-  align-items: center;
-}
-
-.selector{
-  width: 150px;
-  min-height: 30px;
-  margin: 10px;
-  display: inline-block;
-  align-items: right;
-  color: #333842;
-}
-
-.css-vj8t7z{
-  margin: 10px;
-}
-
-.css-1492t68{
-  padding: 5px;
+  flex-direction: row;
 }
 
 .map-controls{
-  align-content: center;
+  margin: 10px 20px 10px 0;
+}
+
+.dd-wrapper{
+  margin: 10px;
+  z-index: 1000;
+}
+
+
+.dd-header-title{
+  padding: 5px;
+}
+
+.dd-list{
+  position: absolute;
+  list-style: none;
+  text-align: left;
+  margin-bottom: 20px;
+  z-index: 1000;
+  background: #333842;
+  opacity: .7;
+}
+
+.dd-list li{
+  padding: 10px;
 }
 
 .fa-sliders{
-  color: #333842;
-  font-size: 1.6rem;
+  color: white;
+  font-size: 1.4rem;
   margin: 10px;
 }
 
 .switch-view{
-  align-self: bottom;
-  margin-left: 20vw;
+  margin-right: 12%;
 }
 
-.switch-view h5{
-  font-size: 16px;;
+.switch-view h4{
+  font-size: 1.2rem;;
   color: white;
 }
 
@@ -394,7 +394,6 @@ button{
 }
 
 .bm-menu{
-  border: 1px solid red;
   background: #333842;
   padding: 3.5em 1em 0;
   font-size: 1.45em;
@@ -472,6 +471,12 @@ button{
 
 .perp-demo li{
   padding: 10px;
+}
+
+/* Development Team Styles */
+.dev-team{
+  margin: 10px 20%;
+  text-align: left;
 }
 
 /* PULSE */

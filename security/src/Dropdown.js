@@ -55,8 +55,8 @@ class Dropdown extends Component{
         <div className="dd-header" onClick={() => this.toggleList()}>
           <div className="dd-header-title">{headerTitle}</div>
           {listOpen
-            ? <FontAwesome name="angle-up" size="2x"/>
-            : <FontAwesome name="angle-down" size="2x"/>
+            ? <FontAwesome name="angle-up" size="1.8x"/>
+            : <FontAwesome name="angle-down" size="1.8x"/>
           }
         </div>
         {listOpen && <ul className="dd-list">

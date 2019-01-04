@@ -36,9 +36,10 @@ render() {
                  </div>
             </form>
 
-            <MapControlBar className = "map-control-bar"/>
-
-            <MapsContainer />
+            <div className = "map-container">
+                <MapControlBar/>
+                <MapsContainer />
+            </div>
         </div>
         </div>
     )

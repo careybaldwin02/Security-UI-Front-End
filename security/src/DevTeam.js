@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import SideBar from './SideBar.js';
+import Header from'./Header.js';
 
 class DevTeam extends Component {
   render() {
@@ -10,11 +11,13 @@ class DevTeam extends Component {
 
         <div className = "container">
 
-        <div>
-        <SideBar />
-        </div>
-        <div className = "page-wrap">
 
+        <SideBar />
+        <Header />
+
+        <div className = "dev-team">
+
+        <div>
         <p>
             Perptrac is a physical security 
             surveillance system and method developed 
@@ -22,12 +25,16 @@ class DevTeam extends Component {
             2016 Connecticut Prosecutor of the Year,
             retired U.S. Naval Captain
         </p>
+        </div>
+        <div>
         <p>
             This demo application has been disigned and 
             developed by Carey Baldwin, Statistician and 
-            Software Engineer with Green Line Analytics
-            www.greenlineanalytics.com
+            Software Engineer with   
+            <a href = 'www.greenlineanalytics.com'> Green Line Analytics</a>
+            
         </p> 
+        </div>
     </div>
     </div>
   )}
