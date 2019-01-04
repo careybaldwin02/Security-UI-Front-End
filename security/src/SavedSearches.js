@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import SideBar from './SideBar';
+import Header from './Header';
 
 import './App.css';
 
@@ -11,6 +12,7 @@ class SavedSearches extends Component {
     <div className = "container">
         <div>
             <SideBar />
+            <Header />
         </div>
         <div className = "page-wrap">
       <div className="recent">

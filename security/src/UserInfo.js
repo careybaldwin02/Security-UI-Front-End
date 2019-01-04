@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import SideBar from './SideBar';
+import Header from './Header';
 import MapsContainer from './Map.js';
+import MapControlBar from './MapControlBar.js';
 import './App.css';
 
 
@@ -13,6 +15,7 @@ class UserInfo extends Component {
 
         <div>
             <SideBar />
+            <Header />
         </div>
         <div className = "page-wrap">
         {/* <div className = "ca-container">
@@ -40,6 +43,7 @@ class UserInfo extends Component {
         </ul>
 
         <div className = "map-container">
+            <MapControlBar />
             <MapsContainer />
         </div>
 

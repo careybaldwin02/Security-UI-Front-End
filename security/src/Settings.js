@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import ControlPanel from './ControlPanel';
 
 import SideBar from './SideBar.js';
+import Header from './Header';
 import './App.css';
 
 
@@ -12,6 +13,7 @@ class Settings extends Component {
     <div className = "container">
         <div>
         <SideBar />
+        <Header />
         </div>
         <div className = "page-wrap">
         <div className="settings">

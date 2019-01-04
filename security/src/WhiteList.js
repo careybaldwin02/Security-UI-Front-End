@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SideBar from './SideBar';
+import Header from './Header';
 import './App.css';
 
 
@@ -9,6 +10,7 @@ class WhiteList extends Component {
     return (
     <div className = "container">
             <SideBar />
+            <Header />
         <div className="blacklist">
 
         <h2>White List</h2>

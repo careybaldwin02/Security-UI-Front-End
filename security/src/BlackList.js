@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SideBar from './SideBar';
+import Header from './Header';
 import './App.css';
 
 
@@ -9,16 +10,15 @@ class BlackList extends Component {
     return (
     <div className = "container">
             <SideBar />
+            <Header />
         <div className="blacklist">
 
+        <div className = "list-title">
         <h2>Black List</h2>
-        <div className = "list-controls">
-            <Link to = "/list-controls">
-                <button className = "list-controls">
-                    List Controls<i className="fas fa-sliders"></i>
-                </button>
-            </Link>
+        <Link to = "/list-controls"><i className="fas fa-sliders"></i>
+        </Link>
         </div>
+
         <div className = "blacklist-item">
         <h4> 
             Jack the Ripper         

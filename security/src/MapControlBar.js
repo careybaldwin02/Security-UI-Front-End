@@ -85,7 +85,7 @@ class MapControlBar extends Component {
 
   render() {
     return (
-        <div className = "map-control-bar">
+        <div className = "control-bar">
         <div className="map-control-buttons">
             <div className = "map-controls">
             <Link to = "/map-controls">
@@ -109,7 +109,7 @@ class MapControlBar extends Component {
           <div className = "switch-view">
           <Link to = {'/location-chart'}>
           <h4>
-            Switch to Chart View
+            Toggle Map/Chart View
           </h4>
           </Link>
           </div>

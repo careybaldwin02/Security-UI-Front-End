@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SideBar from './SideBar.js';
+import Header from './Header';
 import './App.css';
 
 
@@ -10,6 +11,7 @@ class Settings extends Component {
     <div className = "container">
         <div>
         <SideBar />
+        <Header />
         </div>
         <div className = "page-wrap">
         <div className="perp-demo">

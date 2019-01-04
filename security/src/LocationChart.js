@@ -3,8 +3,10 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 import SideBar from './SideBar.js';
+import Header from './Header';
 import chart from './img/chart.jpg';
 import './App.css'
+import ChartControlBar from './ChartControlBar.js';
 
 
 class LocationChart extends Component {
@@ -16,6 +18,7 @@ render() {
 
             <div>
             <SideBar />
+            <Header />
             </div>
             <div className = "page-wrap">
 
@@ -38,24 +41,8 @@ render() {
                  </div>
             </form>
 
+             <ChartControlBar/>
             <div className = "chart-container">
-            <div className = "chart-control-buttons">
-            <Link to = "/chart-controls">
-            <button className = "chart-controls">
-                Chart Controls<i className="fas fa-sliders"></i>
-            </button>
-            </Link>
-            <Link to = "/chart-filters">
-            <button>
-                Filters<i class="fas fa-filter"></i>
-            </button>
-            </Link>
-            <Link to = "/location-demo">
-            <h5 className = "chart-switch">
-                Switch to Map View
-            </h5>
-            </Link>
-            </div>
             <div className = "chart">
                  <img src={chart} />
              </div>

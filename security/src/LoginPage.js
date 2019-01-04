@@ -108,7 +108,6 @@ class LoginPage extends Component {
           </button>
           </div>
 
-        </form>
           <br />
           <div className = "dev-team">
           <Link to = {"development-team"}>
@@ -117,6 +116,7 @@ class LoginPage extends Component {
             </h2>
           </Link>
           </div>
+        </form>
 
       </div>
       </div>

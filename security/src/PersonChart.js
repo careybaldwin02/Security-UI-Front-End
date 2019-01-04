@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import SideBar from './SideBar.js';
 import chart from './img/chart.jpg';
 import './App.css'
+import ChartControlBar from './ChartControlBar.js';
 
 
 class PersonChart extends Component {
@@ -39,24 +40,8 @@ render() {
             </form>
 
             <div className = "chart-container">
-            <div className = "chart-control-buttons">
-            <Link to = "/chart-controls">
-            <button className = "chart-controls">
-                Chart Controls<i className="fas fa-sliders"></i>
-            </button>
-            </Link>
-            <Link to = "/chart-filters">
-            <button>
-                Filters<i class="fas fa-filter"></i>
-            </button>
-            </Link>
-            <Link to = "/person-demo">
-            <h4>
-                Switch to Map View
-            </h4>
-            </Link>
-            </div>
-            <div className = "chart">
+                <ChartControlBar />
+                <div className = "chart">
                  <img src={chart} />
              </div>
             </div>

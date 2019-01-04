@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 
 import SideBar from './SideBar.js';
+import Header from './Header';
 import './App.css';
 
 
@@ -12,6 +13,7 @@ class Favorites extends Component {
 
       <div>
       <SideBar />
+      <Header />
       </div>
       
       <div className = "page-wrap">

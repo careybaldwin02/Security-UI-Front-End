@@ -5,14 +5,17 @@ import SideBar from './SideBar';
 const Header = () => {
     return(
     <div className = "header">
-    <div className = "favorites">
+    
         <Link to={'/favorites'}>
+        <div className = "favorites">
         <i className="fas fa-star"></i>
-        </Link>
         </div>
+        </Link>
 
-        <Link to ="/main">
+
+
         <div className = "perptrac">
+        <Link to ="/main">
         <div className = "title-logo">
         <h1>PERPTRAC</h1>
         <i className="fab fa-product-hunt faa-pulse animated"></i>
@@ -20,8 +23,9 @@ const Header = () => {
         <h5>
             The Next Generation of Physical Security
         </h5>
-        </div>
         </Link>
+        </div>
+
         <Link to={'/emergency'}>
         <div className = "emergency">
             <i className="fas fa-phone"> 911</i>

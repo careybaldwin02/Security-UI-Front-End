@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import './App.css';
 
 import SideBar from './SideBar.js';
+import Header from './Header';
 
 class Privacy extends Component {
   render() {
@@ -10,6 +11,7 @@ class Privacy extends Component {
       <div className = "container">
       <div>
       <SideBar />
+      <Header />
       </div>
       <div className = "page-wrap">
       <div className="privacy">

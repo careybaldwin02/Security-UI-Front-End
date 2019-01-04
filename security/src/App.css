@@ -32,6 +32,7 @@
   position: fixed;
   top: 32px;
   left: 64px;
+  z-index: 1000;
 }
 
 .header .emergency{
@@ -199,6 +200,14 @@ button{
   margin: 15px;
 }
 
+.list-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 .e-d{
   width: 150px;
 }
@@ -281,7 +290,7 @@ button{
   padding-left: 10%;
 }
 
-.map-control-bar{
+.control-bar{
   width: 100%;
   display: flex;
   justify-content: space-between;
