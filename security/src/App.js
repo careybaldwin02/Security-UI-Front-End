@@ -30,8 +30,6 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      
-       <MainHeader />
 
         <Route exact path = "/" render = {props =>
         (< LoginPage {...props}

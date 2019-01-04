@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 import SideBar from './SideBar.js';
+import MapControlBar from './MapControlBar.js';
 import MapsContainer from './Map.js';
-
 import './App.css'
 
 
@@ -33,13 +33,12 @@ render() {
                  <div className = "button-group">
                  <button>Search</button>
 
-               
                  </div>
             </form>
 
-            <div className = "map-container">
+            <MapControlBar className = "map-control-bar"/>
+
             <MapsContainer />
-            </div>
         </div>
         </div>
     )

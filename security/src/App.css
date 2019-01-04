@@ -22,9 +22,30 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: top;
   width: 100%;
+  height: 180px;
   justify-content: space-around;
+}
+
+.header .favorites{
+  position: fixed;
+  top: 32px;
+  left: 64px;
+}
+
+.header .emergency{
+  position: fixed;
+  top: 32px;
+  right: 36px;
+}
+
+.header .perptrac{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .title-logo{
@@ -250,8 +271,6 @@ button{
   list-style: none;
 }
 
-
-
 /* map styles */
 .map-container{
   display: flex;
@@ -335,7 +354,11 @@ button{
   vertical-align: center;
 }
 
-/* menu styles */
+/* sidebar styles */
+
+.side-bar{
+  border: 1px solid red;
+}
 
 .bm-item {
   display: inline-block;
@@ -351,11 +374,10 @@ button{
 }
 
 .bm-burger-button {
+  margin: 36px;
   position: fixed;
   width: 20px;
   height: 20px;
-  left: 36px;
-  top: 38px;
 }
 
 .bm-burger-bars {
@@ -372,8 +394,9 @@ button{
 }
 
 .bm-menu{
+  border: 1px solid red;
   background: #333842;
-  padding: 3.5em 1.5em 0;
+  padding: 3.5em 1em 0;
   font-size: 1.45em;
   opacity: .9;
 }

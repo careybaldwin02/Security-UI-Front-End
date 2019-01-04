@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 
 import SideBar from './SideBar';
+import Header from './Header';
 
 import './App.css'
 
@@ -12,10 +13,9 @@ class MainPage extends Component {
 render() {
     return(
         <div className = "container">
-            <div>
+        
             <SideBar />
-            </div>
-            <div className = "page-wrap">
+            <Header />
 
             <div className = "main">
 
@@ -76,7 +76,7 @@ render() {
 
                 </div>
             </div>
-        </div>
+
     )
 }
 

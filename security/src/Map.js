@@ -54,48 +54,6 @@ export class MapContainer extends Component {
   render() {
     return (
       <div>
-        <div className = "map-control-buttons">
-
-        <div>
-          <h5>
-            Visualization 
-          </h5>         
-        <Select options={ visOptions } className= "selector"/>
-        </div>
-
-        <Link to = "/map-controls">
-        <div>
-          <h5>
-            Map Controls
-          </h5>
-        <button className = "map-controls">
-          <i className="fas fa-sliders"></i>
-        </button>
-        </div>
-        </Link>
-
-
-        {/* <Link to = "/map-filters">
-        <i class="fas fa-filter"></i>
-        </Link> */}
-
-          <div>
-          <h5>
-            Filter
-          </h5>    
-          <Select options={ mapOptions } className= "selector"/>
-          </div>
-
-          <Link to = {'/location-chart'}>
-          <div className = "switch-view">
-          <h5>
-            Switch to Chart View
-          </h5>
-          </div>
-          </Link>
-
-        </div>
-
       <Map
         google={this.props.google}
         zoom={14}

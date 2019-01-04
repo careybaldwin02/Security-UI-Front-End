@@ -3,13 +3,17 @@ import { Link } from 'react-router-dom';
 import './App.css';
 
 import SideBar from './SideBar.js';
+import Header from './Header.js';
 
 
 class About extends Component {
   render() {
     return (
     <div className = "container">
-    <SideBar />
+      <div>
+      <SideBar />
+      <Header />
+      </div>
       <div className="about">
       <h1>About</h1>
       <div className = "about-menu">

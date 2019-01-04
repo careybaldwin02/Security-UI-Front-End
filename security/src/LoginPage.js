@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import SideBar from './SideBar';
+import Header from './Header';
 import './App.css';
 
 class LoginPage extends Component {
@@ -55,8 +56,8 @@ class LoginPage extends Component {
       <div className = "container">
       <div>
       <SideBar />
-  </div>
-  <div className = "page-wrap">
+      <Header />
+      </div>
       <div className="Login">
 
         <form onSubmit={this.handleSubmit}>
@@ -117,7 +118,6 @@ class LoginPage extends Component {
           </Link>
           </div>
 
-      </div>
       </div>
       </div>
     );
