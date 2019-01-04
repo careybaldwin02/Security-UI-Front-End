@@ -34,6 +34,13 @@ class About extends Component {
                 </Link>
             </ul>
         </li>
+            <Link to = {'/development-team'}>
+            <div>
+                <li>
+                    Development Team
+                </li>
+            </div>
+            </Link>
             <div>
                 <li>Report Abuse</li>
             </div>
@@ -48,8 +55,8 @@ class About extends Component {
             <a href = {"http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=10045156.PN.&OS=PN/10045156&RS=PN/10045156"}
             target="_blank" 
             >
-            Licenses (Patent No.: US 10,045,156)
-            </a>
+            Patent No.: US 10,045,156; </a> International Patent Pending
+
         </li>
         <li>
         Version .01

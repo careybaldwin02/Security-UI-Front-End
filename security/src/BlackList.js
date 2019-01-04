@@ -12,6 +12,13 @@ class BlackList extends Component {
         <div className="blacklist">
 
         <h2>Black List</h2>
+        <div className = "list-controls">
+            <Link to = "/list-controls">
+                <button className = "list-controls">
+                    List Controls<i className="fas fa-sliders"></i>
+                </button>
+            </Link>
+        </div>
         <div className = "blacklist-item">
         <h4> 
             Jack the Ripper         

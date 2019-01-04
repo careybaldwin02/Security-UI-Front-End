@@ -58,9 +58,7 @@ class LoginPage extends Component {
   </div>
   <div className = "page-wrap">
       <div className="Login">
-      <h2>
-         Please enter your credentials below.
-        </h2>
+
         <form onSubmit={this.handleSubmit}>
           {
             this.state.error &&
@@ -94,6 +92,7 @@ class LoginPage extends Component {
           id = "remember"/>  
           </div>
 
+          <div className = "login-group">
           <Link to = {`/main`}>
           <button 
           type="submit" 
@@ -101,8 +100,23 @@ class LoginPage extends Component {
           data-test="submit">Login
           </button>
           </Link>
-          <a href = "#">New users register here</a>
+          <button 
+          type="submit" 
+          value="Log In" 
+          data-test="submit">Register
+          </button>
+          </div>
+
         </form>
+          <br />
+          <div className = "dev-team">
+          <Link to = {"development-team"}>
+            <h2>
+              Development Team
+            </h2>
+          </Link>
+          </div>
+
       </div>
       </div>
       </div>

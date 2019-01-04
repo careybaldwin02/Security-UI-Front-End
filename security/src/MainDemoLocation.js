@@ -18,9 +18,11 @@ render() {
             <SideBar />
             </div>
             <div className = "page-wrap">
+            <h2>
+                Maps and Videos
+            </h2>
             <form>
                 <div className = "inputs">
-                <h5>Please Enter a Location</h5>
                 <input
                 placeholder = "West Hartford, CT"
                  />

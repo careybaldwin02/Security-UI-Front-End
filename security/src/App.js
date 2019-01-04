@@ -23,7 +23,8 @@ import LocationChart from './LocationChart';
 import PersonChart from './PersonChart';
 import ChartControls from './ChartControls';
 import BlackListDemo from './BlackListDemo';
-
+import ListControls from './ListControls';
+import DevTeam from './DevTeam';
 
 class App extends Component {
   render() {
@@ -85,6 +86,12 @@ class App extends Component {
         )}
         />
 
+        <Route path = "/development-team" render={props =>
+        (<DevTeam{...props}
+        />
+        )}
+        />
+
         <Route path = "/user" render={props =>
         (<UserInfo{...props}
         />
@@ -105,6 +112,12 @@ class App extends Component {
 
         <Route path = "/map-controls" render={props =>
         (<MapControls{...props}
+        />
+        )}
+        />
+
+        <Route path = "/list-controls" render={props =>
+        (<ListControls{...props}
         />
         )}
         />

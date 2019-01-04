@@ -12,6 +12,15 @@ const mapOptions = [
   {label: "Decrease Radius", value: 5},
 ];
 
+const visOptions = [
+  {label: "Map", value: 1},
+  {label: "Street View", value: 2},
+  {label: "Planet's Satellite Video", value: 3},
+  {label: "Global Hawk Video", value: 4},
+  {label: "Swarm Drones Video", value: 5},
+  {label: "CCTV Cameras", value: 6},
+];
+
 const mapStyles = {
   width: '80%',
   height: '80%',
@@ -47,11 +56,22 @@ export class MapContainer extends Component {
       <div>
         <div className = "map-control-buttons">
 
+        <div>
+          <h5>
+            Visualization 
+          </h5>         
+        <Select options={ visOptions } className= "selector"/>
+        </div>
 
         <Link to = "/map-controls">
+        <div>
+          <h5>
+            Map Controls
+          </h5>
         <button className = "map-controls">
-          Map Controls<i className="fas fa-sliders"></i>
+          <i className="fas fa-sliders"></i>
         </button>
+        </div>
         </Link>
 
 
@@ -59,7 +79,12 @@ export class MapContainer extends Component {
         <i class="fas fa-filter"></i>
         </Link> */}
 
+          <div>
+          <h5>
+            Filter
+          </h5>    
           <Select options={ mapOptions } className= "selector"/>
+          </div>
 
           <Link to = {'/location-chart'}>
           <div className = "switch-view">

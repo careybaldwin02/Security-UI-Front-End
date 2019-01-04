@@ -13,6 +13,7 @@ const MainHeader = () => {
         <div className = "title-logo">
         <h1>PERPTRAC</h1>
         <i className="fab fa-product-hunt faa-pulse animated"></i>
+
         </div>
         </Link>
         <Link to={'/emergency'}>
@@ -20,6 +21,16 @@ const MainHeader = () => {
             <i className="fas fa-phone"> 911</i>
         </div>
         </Link>
+
+        <div>
+        <h5>
+            The Next Generation of Physical Security
+        </h5>
+        <p>
+            Take control of your personal security
+        </p>
+        </div>
+
     </div>
 )};
 

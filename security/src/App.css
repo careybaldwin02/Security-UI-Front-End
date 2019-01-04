@@ -1,9 +1,5 @@
 /* General styles */
 
-h2{
-  text-decoration: underline;
-}
-
 .App {
   overflow: auto;
   text-align: center;

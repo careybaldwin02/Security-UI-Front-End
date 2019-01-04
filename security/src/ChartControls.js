@@ -10,11 +10,11 @@ const ChartControls = () => {
         <div>
         <SideBar />
         </div>
-        <div id = "page-wrap">
-        <div className = "map-controls">
-        <img src={searchcontrols} />
-        </div>
-        </div>
+            <div className = "page-wrap">
+            <div className = "search-controls">
+            <img src={searchcontrols} />
+            </div>
+            </div>
         </div>
 
     )};
