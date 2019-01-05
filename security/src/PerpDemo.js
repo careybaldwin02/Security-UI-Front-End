@@ -26,7 +26,7 @@ class Settings extends Component {
                 </li>
                 <li>
                     {/* link to list of names, one name links to black list detail fig 8*/}
-                    <a href="#">Add to Blacklist</a>   
+                    <a href="#">Add to Watchlist</a>   
                 </li>
                     {/* link to list of names */}
                     <a href="#">Add to Whitelist</a>

@@ -22,7 +22,7 @@ class Favorites extends Component {
       
       <div className = "bws-container">
       <Link to = {"/blacklist"}>
-      <h4 className = "bws">Blacklist
+      <h4 className = "bws">Watchlist
       </h4>
       </Link>
       <Link to = {"/whitelist"}>

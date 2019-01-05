@@ -36,12 +36,14 @@
   position: fixed;
   top: 32px;
   right: 36px;
+  z-index: 1000;
 }
 
 .header .alarm{
   position: fixed;
   top: 32px;
   right: 110px;
+  z-index: 1000;
 }
 
 
@@ -159,8 +161,9 @@ button{
 }
 
 .video-container .summary{
+  display: inline-block;
   font-size: 2rem;
-  margin: 0 5px 10px 5px;
+  margin: 0 25px 10px 25px;
 }
 
 /* .fa-play-circle{
@@ -593,4 +596,38 @@ button{
 .faa-parent.animated-hover:hover > .faa-pulse {
   -webkit-animation: pulse 1.5s linear infinite;
   animation: pulse 1.5s linear infinite;
+}
+
+
+/* ---------- Media Queries ----------- */
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 200px;
+  }
+
+  .header .favorites{
+    position: absolute;
+    top: 80px;
+    left: 150px;
+  }
+  .header .alarm{
+    position: absolute;
+    top: 80px;
+    left: 150px;
+  }
+
+  .header .emergency{
+    position: absolute;
+    top: 80px;
+    left: 175px;
+  }
+
+   .bm-burger-button{
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    top: 80px;
+    left: 100px;
+  }
 }

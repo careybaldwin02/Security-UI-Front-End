@@ -65,7 +65,7 @@ export class MapContainer extends Component {
         >
         <Marker
         onClick={this.onMarkerClick}
-        name={'Add to Blacklist/Whitelist'}
+        name={'Add to Watch List'}
         />
         <InfoWindow
         marker={this.state.activeMarker}

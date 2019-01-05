@@ -20,7 +20,7 @@ render() {
             <div className = "main">
 
             <div className = "video-container">
-            <div><p>Video or Written Summary</p> </div>
+            <div><p>Application Summary</p> </div>
             <div className = "summary">
                 <Link to = "video-summary">
                 <i class="far fa-play-circle"></i>

@@ -111,9 +111,9 @@ class LoginPage extends Component {
           <br />
           <div className = "dev-team">
           <Link to = {"development-team"}>
-            <h2>
+            <h3>
               Development Team
-            </h2>
+            </h3>
           </Link>
           </div>
         </form>

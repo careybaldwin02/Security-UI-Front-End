@@ -56,7 +56,7 @@ class MapControlBar extends Component {
           },
           {
             id: 1,
-            title: 'Show Blacklist',
+            title: 'Show Watchlist',
             selected: false,
             key: 'filter'
           },

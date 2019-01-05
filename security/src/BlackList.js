@@ -14,7 +14,7 @@ class BlackList extends Component {
         <div className="blacklist">
 
         <div className = "list-title">
-        <h2>Black List</h2>
+        <h2>Watch List</h2>
         <Link to = "/list-controls"><i className="fas fa-sliders"></i>
         </Link>
         </div>
@@ -43,7 +43,7 @@ class BlackList extends Component {
 
         <div className = "blacklist-item">
         <h4> 
-            Bonny and Clyde      
+            Lorem Ipsem     
         </h4>
         <Link to = {'/blacklist-demo'}>
         <button>edit</button>
@@ -54,7 +54,7 @@ class BlackList extends Component {
 
         <div className = "blacklist-item">
         <h4> 
-            Charles Manson        
+            Lorem Ipsem        
         </h4>
         <Link to = {'/blacklist-demo'}>
         <button>edit</button>
