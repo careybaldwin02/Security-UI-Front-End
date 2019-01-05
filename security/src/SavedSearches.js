@@ -14,11 +14,10 @@ class SavedSearches extends Component {
             <SideBar />
             <Header />
         </div>
-        <div className = "page-wrap">
       <div className="recent">
-      <h2>
+        <h1>
           Saved Searches
-          </h2>
+        </h1>
         <div className = "recent-item">
         <Link to = {'/perp-demo'}>
         <button>view</button>
@@ -48,7 +47,6 @@ class SavedSearches extends Component {
         </p>
         </div>
         </div>
-      </div>
       </div>
     );
   }

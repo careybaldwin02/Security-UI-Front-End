@@ -21,20 +21,22 @@ class BlackList extends Component {
 
         <div className = "blacklist-item">
         <h4> 
-            Jack the Ripper         
+            Home Alarm System        
         </h4>
         <Link to = {'/blacklist-demo'}>
         <button>edit</button>
+        <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
         </Link>
         </div>
 
         <div className = "blacklist-item">
         <h4> 
-            Al Capone      
+            Lorem Ipsem      
         </h4>
         <Link to = {'/blacklist-demo'}>
         <button>edit</button>
+        <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
         </Link>
         </div>
@@ -45,6 +47,7 @@ class BlackList extends Component {
         </h4>
         <Link to = {'/blacklist-demo'}>
         <button>edit</button>
+        <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
         </Link>
         </div>
@@ -55,6 +58,7 @@ class BlackList extends Component {
         </h4>
         <Link to = {'/blacklist-demo'}>
         <button>edit</button>
+        <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
         </Link>
         </div>   

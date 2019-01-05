@@ -30,17 +30,20 @@ class UserInfo extends Component {
 
         <div className = "user">
         <h2 className = "account-settings">Account Settings</h2>
-        <ul>
-            <li>
+            <div>
                 <Link to = "/manage-subscription">
-                <a href="#">Manage Subscription</a>  
+                <h3>Manage Subscription</h3>  
                 </Link>                 
-            </li>
-            <li>
+            </div>
+            <div>
                 {/* link to list of names, one name links to black list detail fig 8*/}
-                <a href="#">Parental Controls</a>   
-            </li>
-        </ul>
+                <h3>Parental Controls</h3>   
+            </div>
+            <Link to = {'/personal-profile'}>
+                    <div>
+                        <h3>Personal Profile</h3>
+                    </div>
+                </Link>
 
         <div className = "map-container">
             <MapControlBar />

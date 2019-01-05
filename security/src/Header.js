@@ -26,11 +26,22 @@ const Header = () => {
         </Link>
         </div>
 
-        <Link to={'/emergency'}>
-        <div className = "emergency">
-            <i className="fas fa-phone"> 911</i>
+        
+        <div className = "alarm">
+            <Link to = {'/alarm'}>
+            {/* <div className = "alarm">
+                Home Alarm
+            </div> */}
+            <i class="fas fa-bell"></i>
+            {/* <i className="fas fa-house-damage"></i> */}
+            </Link>
         </div>
-        </Link>
+        <div className = "emergency">
+            <Link to={'/emergency'}>
+            <i className="fas fa-phone"> 911</i>
+            </Link>
+        </div>
+
 
         <div>
         </div>

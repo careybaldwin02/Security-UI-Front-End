@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SideBar from './SideBar.js';
 import Header from './Header';
+import ScrollToTop from './ScrollToTop.js';
 import './App.css';
 import mapcontrols from './img/mapcontrols.jpg';
 

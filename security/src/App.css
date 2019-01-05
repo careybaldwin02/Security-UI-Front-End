@@ -13,10 +13,7 @@
   color: white;
 }
 
-#page-wrap {
-  text-align: center;
-  overflow: auto;
-}
+/* Header Styles */
 
 .header{
   display: flex;
@@ -40,6 +37,18 @@
   top: 32px;
   right: 36px;
 }
+
+.header .alarm{
+  position: fixed;
+  top: 32px;
+  right: 110px;
+}
+
+
+/* .header .emergency .fa-house-damage{
+  background-color: white;
+  font-size: 2rem;
+} */
 
 .header .perptrac{
   position: absolute;
@@ -85,6 +94,7 @@ a{
   text-align: left;
   padding: 0 10%;
 }
+
 
 /* styles for login form */
 
@@ -142,6 +152,27 @@ button{
 .main button{
   width: 200px;
 }
+
+.video-container{
+  padding: 10px 4%;
+  background-color: #414653;
+}
+
+.video-container .summary{
+  font-size: 2rem;
+  margin: 0 5px 10px 5px;
+}
+
+/* .fa-play-circle{
+  font-size: 2rem;
+  padding: 0 5px 10px 5px;
+}
+
+.fa-file-alt{
+  font-size: 2rem;
+  padding: 0 5px 10px 5px;
+} */
+
 
 /* about styles */
 
@@ -233,12 +264,12 @@ button{
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  margin-left: 10%;
 }
 
 .recent-item{
   display: flex;
   flex-direction: row;
+  margin-left: 20%;
 }
 
 .recent-item button{
@@ -348,10 +379,28 @@ button{
   color: white;
 }
 
+/* styles for popup on map */
+.gm-style-iw p{
+  color: black;
+  size: 1.4rem;
+}
+
 /* chart styles */
 
+.chart-container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10%;
+}
+
 .chart-container .control-bar{
- margin: 0 18% 0 8%;
+  display: flex;
+  align-self: center;
+  width: 90%;
+  margin: 0 10%;
 
 }
 
@@ -466,6 +515,10 @@ button{
 
 .fa-phone{
   color: red;
+}
+
+.fa-house-damage{
+  color: white;
 }
 
 .fa-product-hunt{

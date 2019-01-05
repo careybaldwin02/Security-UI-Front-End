@@ -24,6 +24,7 @@ class WhiteList extends Component {
             Quinn     
         </h4>
         <button>edit</button>
+        <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
         </div>
 
@@ -32,6 +33,7 @@ class WhiteList extends Component {
             Sam   
         </h4>
         <button>edit</button>
+        <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
         </div>
 
@@ -41,6 +43,7 @@ class WhiteList extends Component {
         </h4>
 
         <button>edit</button>
+        <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
 
         </div> 

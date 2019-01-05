@@ -19,6 +19,20 @@ render() {
 
             <div className = "main">
 
+            <div className = "video-container">
+            <div><p>Video or Written Summary</p> </div>
+            <div className = "summary">
+                <Link to = "video-summary">
+                <i class="far fa-play-circle"></i>
+                </Link>
+            </div>
+            <div className = "summary">
+                <Link to = "written-summary">
+                <i class="far fa-file-alt"></i>
+                </Link>
+            </div>
+            </div>
+
             <h2>Search Options</h2>
             <Link to = "/recent">
             <button>View Recent Searches</button>
@@ -29,40 +43,6 @@ render() {
             <Link to = "/location-demo">
             <button>Search by Location</button>
             </Link>
-
-            {/* <form >
-                 <div className = "inputs">
-                 <i class="far fa-user"> demo person search</i>
-                <input
-                placeholder = "Enter a name or home address of a person"
-                 />
-
-                <input
-                placeholder = "Select a time frame"
-                 />
-                </div>
-                <div className = "button-group">
-                 <button>Search By Person</button>
-                 </div>
-            </form>
-
-            <form>
-                <div className = "inputs">
-                <Link to="/location-demo">
-                <i class="far fa-compass"> demo location search</i>
-                </Link>
-
-                <input
-                placeholder = "Enter a zip code, Town or Country"
-                 />
-                <input
-                placeholder = "Select a time frame"
-                 />
-                 </div>
-                 <div className = "button-group">
-                 <button>Search By Location</button>
-                 </div>
-            </form> */}
 
             {/* <div className = "dev-notes">
                 <p>

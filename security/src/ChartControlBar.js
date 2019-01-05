@@ -69,7 +69,7 @@ class ChartControlBar extends Component {
           },
           {
             id: 3,
-            title: 'Narrow Time Frame',
+            title: 'Change Time Frame',
             selected: false,
             key: 'filter'
           },
