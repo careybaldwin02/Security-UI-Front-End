@@ -18,6 +18,9 @@ class About extends Component {
       <h1>About</h1>
       <div className = "about-menu">
       <ul className = "outside-list">
+        <li>
+            Overview
+        </li>
         <li>Help           
             
             <ul className = "inside-list">

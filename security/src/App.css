@@ -205,7 +205,10 @@ button{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
 
+.list-title h2{
+  margin-right: 20px;
 }
 
 .e-d{
@@ -346,6 +349,11 @@ button{
 }
 
 /* chart styles */
+
+.chart-container .control-bar{
+ margin: 0 18% 0 8%;
+
+}
 
 .chart-control-buttons{
   display: flex;

@@ -21,7 +21,7 @@ const Header = () => {
         <i className="fab fa-product-hunt faa-pulse animated"></i>
         </div>
         <h5>
-            The Next Generation of Physical Security
+            The Next Generation of Physical Surveillance
         </h5>
         </Link>
         </div>

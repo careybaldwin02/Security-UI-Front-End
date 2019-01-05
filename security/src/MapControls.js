@@ -12,13 +12,12 @@ const MapControls = () => {
         <SideBar />
         <Header />
         </div>
-        <div id = "page-wrap">
+        <div className = "page-wrap">
         <div className = "map-controls">
         <img src={mapcontrols} />
         </div>
         </div>
         </div>
-
     )};
 
 export default MapControls;

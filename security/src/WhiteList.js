@@ -12,20 +12,16 @@ class WhiteList extends Component {
             <SideBar />
             <Header />
         <div className="blacklist">
-
-        <h2>White List</h2>
         
-        <div className = "list-controls">
-            <Link to = "/list-controls">
-                <button className = "list-controls">
-                    List Controls<i className="fas fa-sliders"></i>
-                </button>
-            </Link>
+        <div className = "list-title">
+        <h2>White List</h2>
+        <Link to = "/list-controls"><i className="fas fa-sliders"></i>
+        </Link>
         </div>
 
         <div className = "blacklist-item">
         <h4> 
-            Mother Teresa        
+            Quinn     
         </h4>
         <button>edit</button>
         <button className = "e-d">enable/disable</button>
@@ -33,7 +29,7 @@ class WhiteList extends Component {
 
         <div className = "blacklist-item">
         <h4> 
-            Mr. Rodgers   
+            Sam   
         </h4>
         <button>edit</button>
         <button className = "e-d">enable/disable</button>
@@ -41,7 +37,7 @@ class WhiteList extends Component {
 
         <div className = "blacklist-item">
         <h4> 
-            Aunt Janice
+            Dave
         </h4>
 
         <button>edit</button>

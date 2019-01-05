@@ -41,8 +41,9 @@ render() {
                  </div>
             </form>
 
-             <ChartControlBar/>
+
             <div className = "chart-container">
+            <ChartControlBar/>
             <div className = "chart">
                  <img src={chart} />
              </div>

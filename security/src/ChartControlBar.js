@@ -75,7 +75,13 @@ class ChartControlBar extends Component {
           },
           {
             id: 4,
-            title: 'Decrease Radius',
+            title: 'Frequent Visitors',
+            selected: false,
+            key: 'filter'
+          },
+          {
+            id: 5,
+            title: 'Average Velocity',
             selected: false,
             key: 'filter'
           }
@@ -93,12 +99,6 @@ class ChartControlBar extends Component {
             <i className="fas fa-sliders"></i>
             </Link>
         </div>
-        <div className = "dropdown">
-         <Dropdown
-            title="Select Visualization"
-            list={this.state.visual}
-          /> 
-          </div>
           <div className = "dropdown">
           <Dropdown 
             title = "Filter"
