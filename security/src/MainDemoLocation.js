@@ -39,13 +39,12 @@ render() {
             </form>
 
             <div className = "map-container">
-                <MapControlBar/>
+                <MapControlBar />
                 <MapsContainer />
             </div>
         </div>
         </div>
-    )
-}
+    )}
 
 }
 

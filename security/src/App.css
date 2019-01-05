@@ -337,6 +337,11 @@ button{
   align-items: top;
 }
 
+.user-control-bar{
+  padding-left: 0;
+  border: 1px solid red;
+}
+
 .map-control-buttons{
   display: flex;
   flex-direction: row;
