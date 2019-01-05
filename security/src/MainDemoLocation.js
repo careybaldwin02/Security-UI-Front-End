@@ -20,9 +20,9 @@ render() {
             <Header />
             </div>
             <div className = "main-demo-location">
-            <h2>
+            <h1>
                 Maps and Videos
-            </h2>
+            </h1>
             <form>
                 <div className = "inputs">
                 <input

@@ -16,24 +16,24 @@ class Settings extends Component {
         <div className = "page-wrap">
         <div className="perp-demo">
 
-        <h2>Profile of John Doe</h2>
+        <h1>Profile of John Doe</h1>
             <ul>
                 <li>    
-                    <a href="#">Current Location</a>               
+                    Current Location          
                 </li>
                 <li>    
-                    <a href="#">Share Information</a>               
+                    Share Information            
                 </li>
                 <li>
                     {/* link to list of names, one name links to black list detail fig 8*/}
-                    <a href="#">Add to Watchlist</a>   
+                    Add to Watchlist 
                 </li>
                     {/* link to list of names */}
-                    <a href="#">Add to Whitelist</a>
+                    Add to Whitelist
                 <li>
                     {/* link to list control */}
-                    <i class="fas fa-shopping-cart"></i>
-                    <a href="#"> Purchase Information</a>
+                    <i class="fas fa-shopping-cart">  </i>
+                     Purchase Information
                 </li>
             </ul>
 

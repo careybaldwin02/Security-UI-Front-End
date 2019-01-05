@@ -18,6 +18,9 @@ class DevTeam extends Component {
         <div className = "dev-team">
 
         <div>
+            <h1>
+                Development Team
+            </h1>
         <p>
             Perptrac is a physical security 
             surveillance system and method developed 

@@ -13,7 +13,7 @@ class ControlPanel extends Component {
             <Header />
         <div className="settings">
 
-        <h2>General Control Panel</h2>
+        <h1>General Control Panel</h1>
         <img src={configcontrol} />
         
         </div>

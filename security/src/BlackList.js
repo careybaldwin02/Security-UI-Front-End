@@ -14,7 +14,7 @@ class BlackList extends Component {
         <div className="blacklist">
 
         <div className = "list-title">
-        <h2>Watch List</h2>
+        <h1>Watch List</h1>
         <Link to = "/list-controls"><i className="fas fa-sliders"></i>
         </Link>
         </div>

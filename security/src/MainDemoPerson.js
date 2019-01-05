@@ -21,6 +21,9 @@ render() {
             <Header />
             </div>
             <div className = "page-wrap">
+            <h1>
+                Person Search
+            </h1>
             <form>
                 <div className = "inputs">
                 <h5>Please Enter a Name</h5>

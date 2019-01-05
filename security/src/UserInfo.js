@@ -29,7 +29,7 @@ class UserInfo extends Component {
         </div> */}
 
         <div className = "user">
-        <h2 className = "account-settings">Account Settings</h2>
+        <h1 className = "account-settings">Account Settings</h1>
             <div>
                 <Link to = "/manage-subscription">
                 <h3>Manage Subscription</h3>  

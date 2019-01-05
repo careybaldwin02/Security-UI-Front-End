@@ -20,9 +20,9 @@ const Header = () => {
         <h1>PERPTRAC</h1>
         <i className="fab fa-product-hunt faa-pulse animated"></i>
         </div>
-        <h5>
+        <p>
             The Next Generation of Physical Surveillance
-        </h5>
+        </p>
         </Link>
         </div>
 
