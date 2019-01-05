@@ -626,7 +626,7 @@ button{
    .bm-burger-button{
     margin: 0px;
     padding: 0px;
-    position: fixed;
+    position: absolute;
     top: 80px;
     left: 100px;
   }
