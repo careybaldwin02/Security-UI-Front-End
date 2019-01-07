@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import './App.css';
 
@@ -12,8 +13,20 @@ class DevTeam extends Component {
         <div className = "container">
 
 
-        <SideBar />
-        <Header />
+        {/* <SideBar />
+        <Header /> */}
+
+        <div className = "perptrac">
+
+        <div className = "title-logo">
+        <h1>PERPTRAC</h1>
+        <i className="fab fa-product-hunt faa-pulse animated"></i>
+        </div>
+        <p>
+            The Next Generation of Physical Surveillance
+        </p>
+
+        </div>
 
         <div className = "dev-team">
 
@@ -34,7 +47,7 @@ class DevTeam extends Component {
             This demo application has been disigned and 
             developed by Carey Baldwin, Statistician and 
             Software Engineer with   
-            <a href = 'www.greenlineanalytics.com'> Green Line Analytics</a>
+            <Link to = 'www.greenlineanalytics.com'> Green Line Analytics</Link>
             
         </p> 
         </div>

@@ -55,8 +55,19 @@ class LoginPage extends Component {
     return (
       <div className = "container">
       <div>
-      <SideBar />
-      <Header />
+      {/* <SideBar />
+      <Header /> */}
+
+        <div className = "perptrac">
+        <div className = "title-logo">
+        <h1>PERPTRAC</h1>
+        <i className="fab fa-product-hunt faa-pulse animated"></i>
+        </div>
+        <p>
+            The Next Generation of Physical Surveillance
+        </p>
+        </div>
+
       </div>
       <div className="Login">
 
@@ -94,13 +105,13 @@ class LoginPage extends Component {
           </div>
 
           <div className = "login-group">
-          <Link to = {`/main`}>
+          {/* <Link to = {`/main`}> */}
           <button 
           type="submit" 
           value="Log In" 
           data-test="submit">Login
           </button>
-          </Link>
+          {/* </Link> */}
           <button 
           type="submit" 
           value="Log In" 
