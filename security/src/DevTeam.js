@@ -38,7 +38,7 @@ class DevTeam extends Component {
             Perptrac is a physical security 
             surveillance system and method developed 
             and patented by John H. Malone, 
-            2016 Connecticut Prosecutor of the Year,
+            2016 Connecticut Prosecutor of the Year and
             retired U.S. Naval Captain
         </p>
         </div>
@@ -47,7 +47,9 @@ class DevTeam extends Component {
             This demo application has been disigned and 
             developed by Carey Baldwin, Statistician and 
             Software Engineer with   
-            <Link to = 'www.greenlineanalytics.com'> Green Line Analytics</Link>
+            <a href = {"http://www.greenlineanalytics.com"}
+            target="_blank" 
+            > Green Line Analytics</a>
             
         </p> 
         </div>

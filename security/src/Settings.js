@@ -36,8 +36,9 @@ class Settings extends Component {
                     <h3>Access your Whitelist</h3>
                     </Link>
                 <li>
-                    {/* link to list control */}
+                    <Link to ='/list-controls'>
                     <h3>Access your List Controls</h3>
+                    </Link>
                 </li>
             </ul>
 

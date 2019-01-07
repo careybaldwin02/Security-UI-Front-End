@@ -105,13 +105,15 @@ class LoginPage extends Component {
           </div>
 
           <div className = "login-group">
-          {/* <Link to = {`/main`}> */}
+
+{/* ---------------- change this to allow access ---------------------*/}
+          <Link to = {`/main`}>
           <button 
           type="submit" 
           value="Log In" 
           data-test="submit">Login
           </button>
-          {/* </Link> */}
+          </Link>
           <button 
           type="submit" 
           value="Log In" 
