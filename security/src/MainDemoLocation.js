@@ -6,6 +6,7 @@ import SideBar from './SideBar.js';
 import Header from './Header.js';
 import MapControlBar from './MapControlBar.js';
 import MapsContainer from './Map.js';
+import VideoTrace from './VideoTrace';
 import './App.css'
 
 
@@ -38,11 +39,16 @@ render() {
                  </div>
             </form>
 
+            <div className = "video-trace">
+                <VideoTrace />
+            </div>
+
             <div className = "map-container">
                 <MapControlBar />
                 <MapsContainer />
             </div>
-        </div>
+ 
+        </div>  
         </div>
     )}
 
