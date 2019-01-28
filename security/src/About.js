@@ -24,21 +24,21 @@ class About extends Component {
         <li>Help           
             
             <ul className = "inside-list">
-                <Link to = {'/faq'}>
+                {/* <Link to = {'/faq'}> */}
                     <div>
                         <li>FAQs</li>
                     </div>
-                </Link> 
-                <Link to = {'/user-manual'}>
+                {/* </Link>  */}
+                {/* <Link to = {'/user-manual'}> */}
                     <div>
                         <li>User Manual</li>
                     </div>
-                </Link>
-                <Link to = {'/contact-support'}>
+                {/* </Link> */}
+                {/* <Link to = {'/contact-support'}> */}
                     <div>
                         <li>Contact Support</li>
                     </div>
-                </Link>
+                {/* </Link> */}
             </ul>
         </li>
             <Link to = {'/development-team'}>

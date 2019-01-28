@@ -27,7 +27,7 @@ render() {
                 </Link>
             </div>
             <div className = "summary">
-                <Link to = "written-summary">
+                <Link to = "summary-docs">
                 <i class="far fa-file-alt"></i>
                 </Link>
             </div>

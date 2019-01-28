@@ -603,6 +603,10 @@ input{
   padding: 10px 20px;
 }
 
+.summary-docs ul{
+  list-style: none;
+}
+
 /* PULSE */
 
 @-webkit-keyframes pulse {

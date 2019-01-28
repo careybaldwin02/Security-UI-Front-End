@@ -13,7 +13,6 @@ import Settings from './Settings';
 import MainDemoLocation from './MainDemoLocation';
 import MainDemoPerson from './MainDemoPerson';
 import ControlPanel from './ControlPanel';
-import MainHeader from './Header.js';
 import MapControls from './MapControls.js';
 import PerpDemo from './PerpDemo.js';
 import SavedSearches from './SavedSearches';
@@ -25,6 +24,10 @@ import ChartControls from './ChartControls';
 import BlackListDemo from './BlackListDemo';
 import ListControls from './ListControls';
 import DevTeam from './DevTeam';
+import SummaryDocs from './SummaryDocs';
+import Executive from './Executive';
+import FullSummary from './FullSummary';
+import Prospectus from './Prospectus';
 
 class App extends Component {
   render() {
@@ -159,6 +162,30 @@ class App extends Component {
 
         <Route path = "/blacklist-demo" render={props =>
         (<BlackListDemo{...props}
+        />
+        )}
+        />
+
+        <Route path = "/summary-docs" render={props =>
+        (<SummaryDocs{...props}
+        />
+        )}
+        />
+
+        <Route path = "/executive" render={props =>
+        (<Executive{...props}
+        />
+        )}
+        />
+
+        <Route path = "/full-summary" render={props =>
+        (<FullSummary{...props}
+        />
+        )}
+        />
+
+        <Route path = "/Prospectus" render={props =>
+        (<Prospectus{...props}
         />
         )}
         />
