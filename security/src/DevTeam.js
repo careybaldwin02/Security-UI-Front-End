@@ -39,7 +39,8 @@ class DevTeam extends Component {
             surveillance system and method developed 
             and patented by John H. Malone, 
             2016 Connecticut Prosecutor of the Year and
-            retired U.S. Naval Captain
+            retired U.S. Naval Captain.  <a href = {"https://greenlineanalytics.com/partners/"}
+            target="_blank">[Read Bio]</a> 
         </p>
         </div>
         <div>
@@ -49,7 +50,10 @@ class DevTeam extends Component {
             Software Engineer with   
             <a href = {"http://www.greenlineanalytics.com"}
             target="_blank" 
-            > Green Line Analytics</a>
+            > Green Line Analytics. </a>
+            <a href = {"http://www.greenlineanalytics.com/about"}
+            target="_blank" 
+            > [Read Bio]</a>
             
         </p> 
         </div>

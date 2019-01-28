@@ -28,6 +28,7 @@ import SummaryDocs from './SummaryDocs';
 import Executive from './Executive';
 import FullSummary from './FullSummary';
 import Prospectus from './Prospectus';
+import VideoSummary from './VideoSummary';
 
 class App extends Component {
   render() {
@@ -184,8 +185,14 @@ class App extends Component {
         )}
         />
 
-        <Route path = "/Prospectus" render={props =>
+        <Route path = "/prospectus" render={props =>
         (<Prospectus{...props}
+        />
+        )}
+        />
+
+        <Route path = "/video-summary" render={props =>
+        (<VideoSummary{...props}
         />
         )}
         />
