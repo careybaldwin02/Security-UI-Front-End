@@ -12,8 +12,6 @@ const Header = () => {
         </div>
         </Link>
 
-
-
         <div className = "perptrac">
         <Link to ="/main">
         <div className = "title-logo">
@@ -24,6 +22,12 @@ const Header = () => {
             The Next Generation of Physical Surveillance
         </p>
         </Link>
+        </div>
+
+        <div className = "amazon">
+        <a href = {'http://www.amazon.com'} target="_blank">
+        <i class="fab fa-amazon"></i>
+        </a>
         </div>
 
         

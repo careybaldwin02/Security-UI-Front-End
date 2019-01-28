@@ -24,7 +24,26 @@ render() {
             <h1>
                 Maps and Videos
             </h1>
+
+
+            <div className = "video-trace">
+                <div className = "video-info">
+                    <p>With our technology, it is possible to search a location within a specificed time frame and view the paths of unique phone signals.
+                        The video below is an example of a visualization that could be generated based on geolocation tracking.  
+                        <a href = "https://www.zeit.de/datenschutz/malte-spitz-data-retention" target="_blank" >  Citation</a>   
+                    </p>
+                </div>
+                <VideoTrace />
+            </div>
+
             <form>
+                <div className="video-info">
+                    <p>
+                        The demonstration below shows how a user could input a location and time frame.
+                        The map would then display the paths of phone signals according to these specifications.
+                        This could be implemented with the google maps API coupled with Waypoints. 
+                    </p>
+                </div>
                 <div className = "inputs">
                 <input
                 placeholder = "West Hartford, CT"
@@ -35,19 +54,21 @@ render() {
                  </div>
                  <div className = "button-group">
                  <button>Search</button>
-
+                 </div>
+                 <div className="video-info">
+                    A fully implemented map would allow the user to customize their view.  
+                    This could be supported by combining our technology with currently available video surveillance systems. 
+                    The user would also be able to apply filters to their view in order to display only needed information.
+                    Please try the dropdown menus on the map.  
                  </div>
             </form>
-
-            <div className = "video-trace">
-                <VideoTrace />
-            </div>
-
             <div className = "map-container">
                 <MapControlBar />
                 <MapsContainer />
             </div>
  
+            
+
         </div>  
         </div>
     )}

@@ -72,7 +72,7 @@ class LoginPage extends Component {
       <div className="Login">
 
         <form onSubmit={this.handleSubmit}>
-          {
+          {/* {
             this.state.error &&
             <h3 data-test="error" onClick={this.dismissError}>
               <button onClick={this.dismissError}>✖</button>
@@ -93,16 +93,16 @@ class LoginPage extends Component {
           value={this.state.password} 
           onChange={this.handlePassChange}
           placeholder = "Password"
-          />
+          /> */}
 
-          <div className = "remember"> 
+          {/* <div className = "remember"> 
           <label for = "remember">Remember me </label>
           <input 
           type="checkbox" 
           name="remember" 
           value="remember" 
           id = "remember"/>  
-          </div>
+          </div> */}
 
           <div className = "login-group">
 
@@ -111,22 +111,21 @@ class LoginPage extends Component {
           <button 
           type="submit" 
           value="Log In" 
-          data-test="submit">Login
+          data-test="submit">Enter Demo Site
           </button>
           </Link>
-          <button 
+          {/* <button 
           type="submit" 
           value="Log In" 
           data-test="submit">Register
-          </button>
+          </button> */}
           </div>
-
           <br />
-          <div className = "dev-team">
+          <div className = "dev-team-link">
           <Link to = {"development-team"}>
-            <h3>
-              Development Team
-            </h3>
+            <p>
+              Read more about the development team
+          </p>
           </Link>
           </div>
         </form>
