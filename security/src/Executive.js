@@ -21,7 +21,7 @@ const Executive = () => {
             <br />
 
             <div className = "docs">
-                <iframe src={executive} width="820" height="1800"></iframe>
+                <iframe src={executive} width="820px" height="1800px"></iframe>
             </div>
         </div>
     )};
