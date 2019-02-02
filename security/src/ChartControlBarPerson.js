@@ -4,7 +4,7 @@ import Select from 'react-select';
 import Dropdown from './Dropdown';
 import './App.css';
 
-class ChartControlBar extends Component {
+class ChartControlBarPerson extends Component {
   constructor() {
     super()
     this.state = {
@@ -105,9 +105,10 @@ class ChartControlBar extends Component {
               list={this.state.filter}
             />
           </div>
+
         </div>
         <div className="switch-view">
-          <Link to={'/location-demo'}>
+          <Link to={'/person-demo'}>
             <h4>
               Toggle Map/Chart View
           </h4>
@@ -118,4 +119,4 @@ class ChartControlBar extends Component {
   }
 }
 
-export default ChartControlBar;
+export default ChartControlBarPerson;

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import SideBar from './SideBar.js';
 import Header from './Header';
 import MapsContainer from './Map.js';
-import MapControlBar from './MapControlBar';
+import MapControlBarPerson from './MapControlBarPerson';
 
 import './App.css'
 
@@ -42,7 +42,7 @@ render() {
             </form>
 
             <div className = "map-container">
-            <MapControlBar />
+            <MapControlBarPerson />
             <MapsContainer />
             </div>
         </div>

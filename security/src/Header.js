@@ -15,8 +15,8 @@ const Header = () => {
         <div className = "perptrac">
         <Link to ="/main">
         <div className = "title-logo">
-        <h1>PERPTRAC</h1>
-        <i className="fab fa-product-hunt faa-pulse animated"></i>
+        <h1>TrailTracker</h1>
+        <i class="fas fa-map-pin faa-pulse animated"> </i>
         </div>
         <p>
             The Next Generation of Physical Surveillance
