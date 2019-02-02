@@ -584,7 +584,12 @@ input{
   color: rgb(83, 174, 248);
 } */
 
-.fa-map-pin{
+/* .fa-map-pin{
+  color: rgb(83, 174, 248);
+  padding-left: 2px;
+} */
+
+.fa-map-marker-alt{
   color: rgb(83, 174, 248);
   padding-left: 2px;
 }
@@ -612,10 +617,14 @@ input{
 }
 
 /* Development Team Styles */
-.dev-team{
-  margin: 10px 20%;
+.dev-team .greenline-info{
+  margin: 0 25%;
+}
+
+.dev-team-info{
+  margin: 0 25%;
+  padding: 10px 0px 0px 8%;
   text-align: left;
-  padding: 20px;
 }
 
 .dev-team-link{

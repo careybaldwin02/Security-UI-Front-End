@@ -61,7 +61,7 @@ class LoginPage extends Component {
         <div className = "perptrac">
         <div className = "title-logo">
         <h1>TrailTracker </h1>
-        <i class="fas fa-map-pin faa-pulse animated"> </i>
+        <i class="fas fa-map-marker-alt faa-pulse animated"> </i>
         {/* <i className="fas fa-globe-americas faa-pulse animated"></i> */}
         {/* <i className="fab fa-product-hunt faa-pulse animated"></i> */}
         </div>
