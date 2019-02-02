@@ -448,6 +448,7 @@ input{
 .chart-container .chart-control-bar{
   display: flex;
   justify-content: space-between;
+  padding-top: 15px;
   width: 100%;
 }
 
