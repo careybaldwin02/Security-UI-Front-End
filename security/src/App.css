@@ -624,6 +624,8 @@ input{
 /* Development Team Styles */
 .dev-team .greenline-info{
   margin: 0 25%;
+  padding-left: 4%;
+  text-align: left;
 }
 
 .dev-team-info{
