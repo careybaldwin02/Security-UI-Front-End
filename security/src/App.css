@@ -311,7 +311,7 @@ input{
 
 .recent-item button{
   height: 30px;
-  width: 45px;
+  width: 52px;
   padding: 5px;
 }
 
@@ -617,6 +617,23 @@ input{
 
 /* Perp Demo Styles */
 
+.perp-demo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+}
+
+.perp-demo-chart{
+  width: 74.5%;
+  padding-top: 15px;
+}
+
+.perp-demo-list{
+  width: 24.5%;
+  padding-top: 15px;
+}
+
 .perp-demo ul{
   list-style: none;
   justify-content: left;
@@ -625,6 +642,7 @@ input{
 }
 
 .perp-demo li{
+  text-align: left;
   padding: 10px;
 }
 
