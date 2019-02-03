@@ -15,35 +15,39 @@ class WhiteList extends Component {
             <h2>White List</h2>
           </div>
 
+          <div className="add-item">
+            <button>Add a New Entry</button>
+            {/* <button>Add a New Group</button> */}
+          </div>
           <div className="blacklist-item">
             <h4>Quinn</h4>
-            <Link to="/list-controls">
-              <button>
-                <b>edit</b>
-              </button>
-            </Link>
+            {/* <Link to="/list-controls"> */}
+            <button>
+              <b>delete</b>
+            </button>
+            {/* </Link> */}
             <button>add/remove shortcut</button>
             <button className="e-d">enable/disable</button>
           </div>
 
           <div className="blacklist-item">
             <h4>Sam</h4>
-            <Link to="/list-controls">
-              <button>
-                <b>edit</b>
-              </button>
-            </Link>
+            {/* <Link to="/list-controls"> */}
+            <button>
+              <b>delete</b>
+            </button>
+            {/* </Link> */}
             <button>add/remove shortcut</button>
             <button className="e-d">enable/disable</button>
           </div>
 
           <div className="blacklist-item">
             <h4>Dave</h4>
-            <Link to="/list-controls">
-              <button>
-                <b>edit</b>
-              </button>
-            </Link>
+            {/* <Link to="/list-controls"> */}
+            <button>
+              <b>delete</b>
+            </button>
+            {/* </Link> */}
             <button>add/remove shortcut</button>
             <button className="e-d">enable/disable</button>
           </div>

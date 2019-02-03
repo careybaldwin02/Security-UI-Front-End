@@ -29,7 +29,7 @@ class Settings extends Component {
                         </li>
                         {/* link to list of names */}
                         <Link to='/prospectus'>
-                            <h3>Marketing Prospectus (100 pages)</h3>
+                            <h3>Marketing Prospectus (75 pages)</h3>
                         </Link>
                     </ul>
                 </div>

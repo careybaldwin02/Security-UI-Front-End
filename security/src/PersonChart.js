@@ -31,6 +31,13 @@ class PersonChart extends Component {
                         <VideoTrace />
                     </div>
                     <form>
+                    <div className="video-info">
+                            <p>
+                                The demonstration below shows how a user could input a person's name and time frame.
+                                The chart would then display information about that individual.
+                                The information displayed could be customized according to user preference.
+                            </p>
+                        </div>
                         <div className="inputs">
                             <h5>Please Enter a Name</h5>
                             <input
