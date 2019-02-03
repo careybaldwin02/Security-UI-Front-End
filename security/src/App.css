@@ -14,7 +14,7 @@
 }
 
 img{
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -477,6 +477,10 @@ input{
   text-align: center;
   align-content: center;
   vertical-align: center;
+}
+
+.chart-view img{
+  width: 100%;
 }
 
 

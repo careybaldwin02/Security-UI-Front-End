@@ -22,7 +22,7 @@ class BlackList extends Component {
             Home Alarm System        
         </h4>
         <Link to = "/list-controls">
-        <button>edit</button>
+        <button><b>edit</b></button>
         </Link>
         <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
@@ -33,7 +33,7 @@ class BlackList extends Component {
             Known Gun Owners     
         </h4>
         <Link to = "/list-controls">
-        <button>edit</button>
+        <button><b>edit</b></button>
         </Link>
         <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
@@ -44,7 +44,7 @@ class BlackList extends Component {
             My Kids     
         </h4>
         <Link to = "/list-controls">
-        <button>edit</button>
+        <button><b>edit</b></button>
         </Link>
         <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
@@ -55,7 +55,7 @@ class BlackList extends Component {
             My Parents        
         </h4>
         <Link to = "/list-controls">
-        <button>edit</button>
+        <button><b>edit</b></button>
         </Link>
         <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
