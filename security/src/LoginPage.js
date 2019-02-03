@@ -74,38 +74,8 @@ class LoginPage extends Component {
       </div>
       <div className="Login">
 
-        <form onSubmit={this.handleSubmit}>
-          {/* {
-            this.state.error &&
-            <h3 data-test="error" onClick={this.dismissError}>
-              <button onClick={this.dismissError}>✖</button>
-              {this.state.error}
-            </h3>
-          }
-          <input 
-          type="text" 
-          data-test="username" 
-          value={this.state.username} 
-          onChange={this.handleUserChange} 
-          placeholder = "Username"
-          />
+        <div className = "form">
 
-          <input 
-          type="password" 
-          data-test="password" 
-          value={this.state.password} 
-          onChange={this.handlePassChange}
-          placeholder = "Password"
-          /> */}
-
-          {/* <div className = "remember"> 
-          <label for = "remember">Remember me </label>
-          <input 
-          type="checkbox" 
-          name="remember" 
-          value="remember" 
-          id = "remember"/>  
-          </div> */}
 
           <div className = "login-group">
 
@@ -131,7 +101,7 @@ class LoginPage extends Component {
           </p>
           </Link>
           </div>
-        </form>
+        </div>
 
       </div>
       </div>

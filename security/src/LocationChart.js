@@ -8,10 +8,22 @@ import chart from './img/chart.jpg';
 import VideoTrace from './VideoTrace';
 import './App.css'
 import ChartControlBar from './ChartControlBar.js';
+import searchcontrols from './img/searchcontrols.jpg';
 
 
 class LocationChart extends Component {
+    constructor() {
+        super()
+        this.state = {
+            isHidden: true, // for map controls
+        }
+    }
 
+    toggleHidden() {
+        this.setState({
+            isHidden: !this.state.isHidden
+        })
+    }
 
     render() {
         return (
@@ -33,7 +45,7 @@ class LocationChart extends Component {
                         <VideoTrace />
                     </div>
 
-                    <form>
+                    <div className="form">
                         <div className="video-info">
                             <p>
                                 The demonstration below shows how a user could input a location and time frame.
@@ -57,9 +69,14 @@ class LocationChart extends Component {
                             Within this view the user could apply filters in order to achieve their desired information.
                             Please try the dropdown menu for some examples. 
                         </div>
-                    </form>
-
-
+                    </div>
+                    <div className="chart-controls">
+                        <h2 onClick={this.toggleHidden.bind(this)} >
+                            Toggle Chart-View / Chart-Controls
+                                <i className="fas fa-sliders"></i>
+                            {!this.state.isHidden && <img src={searchcontrols} />}
+                        </h2>
+                    </div>
                     <div className="chart-container">
                         <ChartControlBar />
                         <div className="chart">

@@ -8,10 +8,22 @@ import MapControlBar from './MapControlBar.js';
 import MapsContainer from './Map.js';
 import VideoTrace from './VideoTrace';
 import './App.css'
-
+import mapcontrols from './img/mapcontrols.jpg';
+import staticmap from './img/staticmap.png';
 
 class MainDemoLocation extends Component {
+    constructor() {
+        super()
+        this.state = {
+            isHidden: true, // for map controls
+        }
+    }
 
+    toggleHidden() {
+        this.setState({
+            isHidden: !this.state.isHidden
+        })
+    }
 
     render() {
         return (
@@ -32,7 +44,7 @@ class MainDemoLocation extends Component {
                         <VideoTrace />
                     </div>
 
-                    <form>
+                    <div className="form">
                         <div className="video-info">
                             <p>
                                 The demonstration below shows how a user could input a location and time frame.
@@ -57,14 +69,21 @@ class MainDemoLocation extends Component {
                             The user would also be able to apply filters to their view in order to display only needed information.
                             Please try the dropdown menus on the map.
                         </div>
-                    </form>
-                    <div className="map-container">
-                        <MapControlBar />
-                        <MapsContainer />
                     </div>
-
-
-
+                    <div className="map-controls">
+                        <h2 onClick={this.toggleHidden.bind(this)} >
+                            Toggle Map-View / Map-Controls
+                                <i className="fas fa-sliders"></i>
+                            {!this.state.isHidden && <img src={mapcontrols} />}
+                        </h2>
+                    </div>
+                    
+                    <div>
+                        <MapControlBar />
+                        <div className="map">
+                            <img src={staticmap} />
+                        </div>
+                    </div>
                 </div>
             </div>
         )

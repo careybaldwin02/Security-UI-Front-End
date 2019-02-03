@@ -33,7 +33,7 @@ button{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 2080px;
+  height: auto !important;
 }
 
 /* Header Styles */
@@ -133,7 +133,7 @@ a{
 
 /* styles for login form */
 
-form{
+.form{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,7 +362,7 @@ input{
 }
 
 .control-bar{
-  width: 100%;
+  margin: 10px 8%;
   display: flex;
   justify-content: space-between;
   align-items: top;
@@ -371,11 +371,13 @@ input{
 
 .map-control-buttons{
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 
-.map-controls{
-  margin: 10px 20px 10px 0;
+.map-controls img{
+  padding: 10px;
 }
 
 .dd-wrapper{
@@ -471,7 +473,7 @@ input{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+
 }
 
 .chart-control-buttons button{
@@ -484,6 +486,11 @@ input{
 
 .chart-view img{
   width: 100%;
+}
+
+.chart-controls img{
+  padding: 15px;
+  width: 90%;
 }
 
 
@@ -619,18 +626,12 @@ input{
 
 .perp-demo{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: top;
-}
-
-.perp-demo-chart{
-  width: 74.5%;
-  padding-top: 15px;
+  align-items: center;
 }
 
 .perp-demo-list{
-  width: 24.5%;
   padding-top: 15px;
 }
 
@@ -643,7 +644,6 @@ input{
 
 .perp-demo li{
   text-align: left;
-  padding: 10px;
 }
 
 /* Development Team Styles */
@@ -666,7 +666,14 @@ input{
   padding: 10px 20px;
 }
 
+.summary-docs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .summary-docs ul{
+  text-align: left;
   list-style: none;
 }
 

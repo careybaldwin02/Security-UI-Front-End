@@ -94,11 +94,6 @@ class ChartControlBarPerson extends Component {
     return (
       <div className="chart-control-bar">
         <div className="chart-control-buttons">
-          <div className="chart-controls">
-            <Link to="/chart-controls">
-              <i className="fas fa-sliders"></i>
-            </Link>
-          </div>
           <div className="dropdown">
             <Dropdown
               title="Filter"

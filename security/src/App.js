@@ -29,6 +29,7 @@ import Executive from './Executive';
 import FullSummary from './FullSummary';
 import Prospectus from './Prospectus';
 import VideoSummary from './VideoSummary';
+import PerpProfile from './PerpProfile';
 
 class App extends Component {
   render() {
@@ -193,6 +194,12 @@ class App extends Component {
 
         <Route path = "/video-summary" render={props =>
         (<VideoSummary{...props}
+        />
+        )}
+        />
+
+        <Route path = "/blacklist-profile" render={props =>
+        (<PerpProfile{...props}
         />
         )}
         />

@@ -8,17 +8,25 @@ import mapcontrols from './img/mapcontrols.jpg';
 
 const MapControls = () => {
     return (
-        <div className = "container">
-        <div>
-        <SideBar />
-        <Header />
+        <div className="container">
+            <div>
+                <SideBar />
+                <Header />
+            </div>
+            <div>
+            </div>
+            <br />
+            <div>
+                <Link to='/location-demo'>
+                    <i class="fas fa-arrow-left">   Back to Maps and Videos</i>
+                </Link>
+            </div>
+            <br />
+            <div className="map-controls">
+                <img src={mapcontrols} />
+            </div>
         </div>
-        <div className = "page-wrap">
-        <div className = "map-controls">
-        <img src={mapcontrols} />
-        </div>
-        </div>
-        </div>
-    )};
+    )
+};
 
 export default MapControls;

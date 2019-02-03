@@ -7,12 +7,23 @@ import Header from './Header';
 import MapsContainer from './Map.js';
 import VideoTrace from './VideoTrace';
 import MapControlBarPerson from './MapControlBarPerson';
-
+import mapcontrols from './img/mapcontrols.jpg';
 import './App.css'
-
+import staticmap from './img/staticmap.png';
 
 class MainDemoLocation extends Component {
+    constructor() {
+        super()
+        this.state = {
+            isHidden: true, // for map controls
+        }
+    }
 
+    toggleHidden() {
+        this.setState({
+            isHidden: !this.state.isHidden
+        })
+    }
 
     render() {
         return (
@@ -32,7 +43,7 @@ class MainDemoLocation extends Component {
                         </div>
                         <VideoTrace />
                     </div>
-                    <form>
+                    <div className="form">
                         <div className="video-info">
                             <p>
                                 The demonstration below shows how a user could input a person's name and time frame.
@@ -52,11 +63,19 @@ class MainDemoLocation extends Component {
                         <div className="button-group">
                             <button>Search</button>
                         </div>
-                    </form>
-
-                    <div className="map-container">
-                        <MapControlBarPerson />
-                        <MapsContainer />
+                    </div>
+                    <div className="map-controls">
+                        <h2 onClick={this.toggleHidden.bind(this)} >
+                            Toggle Map-View / Map-Controls
+                                <i className="fas fa-sliders"></i>
+                            {!this.state.isHidden && <img src={mapcontrols} />}
+                        </h2>
+                    </div>
+                    <div>
+                        <div className="map-container">
+                            <MapControlBarPerson />
+                            <img src={staticmap} />
+                        </div>
                     </div>
                 </div>
             </div>

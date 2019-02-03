@@ -18,7 +18,7 @@ class RecentSearches extends Component {
       <div className="recent">
         <div className = "recent-item">
         <Link to = {'/perp-demo'}>
-        <button>view</button>
+        <button><b>view</b></button>
         </Link>
         <p>Chuck Santiago, 406 E. Jefferson St. Ann Arbor MI 48104            
         </p>

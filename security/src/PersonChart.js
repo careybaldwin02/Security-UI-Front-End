@@ -7,9 +7,21 @@ import chart from './img/chart.jpg';
 import './App.css'
 import ChartControlBarPerson from './ChartControlBarPerson.js';
 import VideoTrace from './VideoTrace';
+import searchcontrols from './img/searchcontrols.jpg';
 
 class PersonChart extends Component {
+    constructor() {
+        super()
+        this.state = {
+            isHidden: true, // for map controls
+        }
+    }
 
+    toggleHidden() {
+        this.setState({
+            isHidden: !this.state.isHidden
+        })
+    }
 
     render() {
         return (
@@ -20,7 +32,7 @@ class PersonChart extends Component {
                     <Header />
                 </div>
                 <div className="chart-view">
-                <h1>Person Search: Chart View</h1>
+                    <h1>Person Search: Chart View</h1>
                     <div className="video-trace">
                         <div className="video-info">
                             <p>With our technology, it is possible to search for a person within a specificed time frame and view the path of his/her phone signal.
@@ -30,8 +42,8 @@ class PersonChart extends Component {
                         </div>
                         <VideoTrace />
                     </div>
-                    <form>
-                    <div className="video-info">
+                    <div className="form">
+                        <div className="video-info">
                             <p>
                                 The demonstration below shows how a user could input a person's name and time frame.
                                 The chart would then display information about that individual.
@@ -50,8 +62,15 @@ class PersonChart extends Component {
                         <div className="button-group">
                             <button>Search</button>
                         </div>
-                    </form>
+                    </div>
 
+                    <div className="chart-controls">
+                        <h2 onClick={this.toggleHidden.bind(this)} >
+                            Toggle Chart-View / Chart-Controls
+                                <i className="fas fa-sliders"></i>
+                            {!this.state.isHidden && <img src={searchcontrols} />}
+                        </h2>
+                    </div>
                     <div className="chart-container">
                         <ChartControlBarPerson />
                         <div className="chart">

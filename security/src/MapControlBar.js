@@ -8,7 +8,6 @@ class MapControlBar extends Component {
     super()
     this.state = {
       visual: [
-
         {
           id: 0,
           title: 'Map',
@@ -82,16 +81,10 @@ class MapControlBar extends Component {
     }
   }
 
-
   render() {
     return (
         <div className = "control-bar">
         <div className="map-control-buttons">
-            <div className = "map-controls">
-            <Link to = "/map-controls">
-            <i className="fas fa-sliders"></i>
-            </Link>
-        </div>
         <div className = "dropdown">
          <Dropdown
             title="Select Visualization"

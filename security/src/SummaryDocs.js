@@ -18,18 +18,18 @@ class Settings extends Component {
                     <ul>
                         <li>
                             <Link to="/executive">
-                                <h3>Executive Summary (1 page)</h3>
+                                <h3><b>Executive Summary (1 page)</b></h3>
                             </Link>
                         </li>
                         <li>
                             {/* link to list of names, one name links to black list detail fig 8*/}
                             <Link to='/full-summary'>
-                                <h3>Full Summary (10 pages)</h3>
+                                <h3><b>Full Summary (10 pages)</b></h3>
                             </Link>
                         </li>
                         {/* link to list of names */}
                         <Link to='/prospectus'>
-                            <h3>Marketing Prospectus (75 pages)</h3>
+                            <h3><b>Marketing Prospectus (76 pages)</b></h3>
                         </Link>
                     </ul>
                 </div>

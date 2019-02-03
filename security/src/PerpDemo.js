@@ -16,16 +16,18 @@ class Settings extends Component {
                 </div>
                 {/* <h1>Profile of Chuck Santiago</h1> */}
                 <div className="perp-demo">
-                    <div className="perp-demo-chart">
-                        <img src={blacklistprofile} />
-                    </div>
                     <div className="perp-demo-list">
+                        <h1>Chuck Santiago</h1>
                         <ul>
-                            <li>Current Location</li>
-                            <li>Share Information</li>
-                            <li>Add to Watchlist</li>
-                            <li>Add to Whitelist</li>
-                            <li><i class="fas fa-shopping-cart"></i>Purchase Information</li>
+                            <li><h3>Saved Search Results</h3></li>
+                            <Link to={'/blacklist-profile'}>
+                                <li><h3><b>Profile</b></h3></li>
+                            </Link>
+                            <li><h3>Current Location</h3></li>
+                            <li><h3>Share Information</h3></li>
+                            <li><h3>Add to Watchlist</h3></li>
+                            <li><h3>Add to Whitelist</h3></li>
+                            <li><h3><i class="fas fa-shopping-cart"></i>Purchase Information</h3></li>
                         </ul>
                     </div>
                 </div>
