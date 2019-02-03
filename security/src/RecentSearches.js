@@ -20,7 +20,7 @@ class RecentSearches extends Component {
         <Link to = {'/perp-demo'}>
         <button>view</button>
         </Link>
-        <p>John Doe, 406 E. Jefferson St. Ann Arbor MI 48104            
+        <p>Chuck Santiago, 406 E. Jefferson St. Ann Arbor MI 48104            
         </p>
         
         </div>

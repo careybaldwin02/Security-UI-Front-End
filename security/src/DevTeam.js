@@ -20,7 +20,7 @@ class DevTeam extends Component {
                     <div className="greenline-info">
                         <h1>GREENLINE ANALYTICS</h1>
                         <h3 className="dev-bio">Data Analytics and Software Development</h3>
-                        <a href={"https://greenlineanalytics.com/partners/"} target="_blank"><p>http://greenlineanalytics.com</p></a>
+                        <a href={"https://greenlineanalytics.com/"} target="_blank"><p>http://greenlineanalytics.com</p></a>
                         <p>contact: cbaldwin@greenlineanalytics.com</p>
                     </div>
                     <div className="dev-team-info">
