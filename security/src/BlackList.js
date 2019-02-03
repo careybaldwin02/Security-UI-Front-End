@@ -15,52 +15,50 @@ class BlackList extends Component {
 
         <div className = "list-title">
         <h1>Watch List</h1>
-        <Link to = "/list-controls"><i className="fas fa-sliders"></i>
-        </Link>
         </div>
 
         <div className = "blacklist-item">
         <h4> 
             Home Alarm System        
         </h4>
-        <Link to = {'/blacklist-demo'}>
+        <Link to = "/list-controls">
         <button>edit</button>
+        </Link>
         <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
-        </Link>
         </div>
 
         <div className = "blacklist-item">
         <h4> 
             Known Gun Owners     
         </h4>
-        <Link to = {'/blacklist-demo'}>
+        <Link to = "/list-controls">
         <button>edit</button>
+        </Link>
         <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
-        </Link>
         </div>
 
         <div className = "blacklist-item">
         <h4> 
             My Kids     
         </h4>
-        <Link to = {'/blacklist-demo'}>
+        <Link to = "/list-controls">
         <button>edit</button>
+        </Link>
         <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
-        </Link>
         </div>
 
         <div className = "blacklist-item">
         <h4> 
             My Parents        
         </h4>
-        <Link to = {'/blacklist-demo'}>
+        <Link to = "/list-controls">
         <button>edit</button>
+        </Link>
         <button>add/remove shortcut</button>
         <button className = "e-d">enable/disable</button>
-        </Link>
         </div>   
         </div>
 
