@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Select from 'react-select';
 import Dropdown from './Dropdown';
+import Modal from './Modal';
+import searchcontrols from './img/searchcontrols.jpg'
 import './App.css';
 
 class ChartControlBar extends Component {
   constructor() {
     super()
     this.state = {
+      isHidden: true,
       visual: [
 
         {
@@ -89,15 +92,27 @@ class ChartControlBar extends Component {
     }
   }
 
+  toggleHidden() {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
+  }
 
   render() {
     return (
       <div className="chart-control-bar">
         <div className="chart-control-buttons">
           <div className="chart-controls">
-            <Link to="/chart-controls">
+          <div onClick={this.toggleHidden.bind(this)}>
+            <div>
               <i className="fas fa-sliders"></i>
-            </Link>
+            </div>
+          </div>
+          {!this.state.isHidden &&
+            <Modal>
+              <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
+              <img src={searchcontrols} />}
+            </Modal>}
           </div>
           <div className="dropdown">
             <Dropdown

@@ -31,33 +31,27 @@ class BlackList extends Component {
 
                     <div className="blacklist-item">
                         <h4>Known Gun Owners</h4>
-                        <Link to="/list-controls">
                             <button>
-                                <b>edit</b>
+                                edit
                             </button>
-                        </Link>
                         <button>add/remove shortcut</button>
                         <button className="e-d">enable/disable</button>
                     </div>
 
                     <div className="blacklist-item">
                         <h4>My Kids</h4>
-                        <Link to="/list-controls">
                             <button>
-                                <b>edit</b>
+                                edit
                             </button>
-                        </Link>
                         <button>add/remove shortcut</button>
                         <button className="e-d">enable/disable</button>
                     </div>
 
                     <div className="blacklist-item">
                         <h4>My Parents</h4>
-                        <Link to="/list-controls">
                             <button>
-                                <b>edit</b>
+                                edit
                             </button>
-                        </Link>
                         <button>add/remove shortcut</button>
                         <button className="e-d">enable/disable</button>
                     </div>

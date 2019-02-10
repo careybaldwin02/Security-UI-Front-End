@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://careybaldwin02.github.io/",
   "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
     "@material-ui/core": "^3.5.1",
     "bootstrap": "^4.2.1",
     "bower": "^1.8.4",

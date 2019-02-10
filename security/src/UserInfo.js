@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import SideBar from './SideBar';
-import Header from './Header';
-import MapsContainer from './Map.js';
-import MapControlBar from './MapControlBar.js';
-import './App.css';
-
+import SideBar from "./SideBar";
+import Header from "./Header";
+import MapsContainer from "./Map.js";
+import MapControlBar from "./MapControlBar.js";
+import staticmap from "./img/staticmap.png";
+import "./App.css";
 
 class UserInfo extends Component {
     render() {
@@ -16,30 +16,27 @@ class UserInfo extends Component {
                     <SideBar />
                     <Header />
                 </div>
-                <div className="user">
+                <div className="user-container">
+                    <div className="user">
                         <h1 className="account-settings">Account Settings</h1>
-                        <div>
-                            {/* <Link to="/manage-subscription"> */}
-                                <h3>Manage Subscription</h3>
-                            {/* </Link> */}
-                        </div>
+                        {/* <Link to="/manage-subscription"> */}
+                        <h3>Manage Subscription</h3>
+                        {/* </Link> */}
+                        <h3>My Videos</h3>
                         {/* link to list of names, one name links to black list detail fig 8*/}
                         <h3>Parental Controls</h3>
-                    {/* <Link to={'/personal-profile'}> */}
-                        <div>
-                            <h3>Personal Profile</h3>
-                        </div>
-                    {/* </Link> */}
-                    <div>
-                        <br />
-                        <p>Map will show user's current location</p>
+                        {/* <Link to={'/personal-profile'}> */}
+                        <h3>Personal Profile</h3>
+                        {/* </Link> */}
                     </div>
+
                     <div className="map-container">
-                        <MapsContainer />
+                        <p className="user-location">Your current location:</p>
+                        <img src={staticmap} />
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 

@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Select from 'react-select';
+import styled from "@emotion/styled";
 import Dropdown from './Dropdown';
+import mapcontrols from './img/mapcontrols.jpg';
+import Modal from './Modal';
+
+const CloseButton = styled.h2`
+  color: white;
+  cursor: pointer;
+`
 
 class MapControlBar extends Component {
-    constructor(){
+  constructor() {
     super()
     this.state = {
+      isHidden: true,
+
       visual: [
         {
           id: 0,
@@ -43,70 +53,91 @@ class MapControlBar extends Component {
           title: 'CCTV Cameras',
           selected: false,
           key: 'visual'
+        },
+        {
+          id: 6,
+          title: 'Crime Videos (17)',
+          selected: false,
+          key: 'visual'
         }
       ],
 
       filter: [
         {
-            id: 0,
-            title: 'Show All',
-            selected: false,
-            key: 'filter'
-          },
-          {
-            id: 1,
-            title: 'Show Watchlist',
-            selected: false,
-            key: 'filter'
-          },
-          {
-            id: 2,
-            title: 'Show Whitelist',
-            selected: false,
-            key: 'filter'
-          },
-          {
-            id: 3,
-            title: 'Change Time Frame',
-            selected: false,
-            key: 'filter'
-          },
-          {
-            id: 4,
-            title: 'Decrease Radius',
-            selected: false,
-            key: 'filter'
-          }
-        ]
+          id: 0,
+          title: 'Show All',
+          selected: false,
+          key: 'filter'
+        },
+        {
+          id: 1,
+          title: 'Show Watchlist',
+          selected: false,
+          key: 'filter'
+        },
+        {
+          id: 2,
+          title: 'Show Whitelist',
+          selected: false,
+          key: 'filter'
+        },
+        {
+          id: 3,
+          title: 'Change Time Frame',
+          selected: false,
+          key: 'filter'
+        },
+        {
+          id: 4,
+          title: 'Decrease Radius',
+          selected: false,
+          key: 'filter'
+        }
+      ]
     }
+  }
+
+  toggleHidden() {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
   }
 
   render() {
     return (
-        <div className = "control-bar">
+      <div className="control-bar">
         <div className="map-control-buttons">
-        <div className = "dropdown">
-         <Dropdown
-            title="Select Visualization"
-            list={this.state.visual}
-          /> 
+          <div onClick={this.toggleHidden.bind(this)}>
+            <div>
+              <i className="fas fa-sliders"></i>
+            </div>
           </div>
-          <div className = "dropdown">
-          <Dropdown 
-            title = "Filter"
-            list={this.state.filter}
-          />
+          {!this.state.isHidden &&
+            <Modal>
+              <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
+              <img src={mapcontrols} />}
+            </Modal>}
+          <div className="dropdown">
+            <Dropdown
+              title="Select Visualization"
+              list={this.state.visual}
+            />
           </div>
-
+          <div className="dropdown">
+            <Dropdown
+              title="Filter"
+              list={this.state.filter}
+            />
+          </div>
         </div>
-          <div className = "switch-view">
-          <Link to = {'/location-chart'}>
-          <h4>
-            Toggle Map/Chart View
+        <div className="switch-view">
+          <Link to={'/location-chart'}>
+            <h4>
+              Toggle Map/Chart View
           </h4>
           </Link>
-          </div>
         </div>
+      </div>
     );
   }
 }

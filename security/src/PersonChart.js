@@ -7,6 +7,7 @@ import chart from './img/chart.jpg';
 import './App.css'
 import ChartControlBarPerson from './ChartControlBarPerson.js';
 import VideoTrace from './VideoTrace';
+import Modal from './Modal';
 import searchcontrols from './img/searchcontrols.jpg';
 
 class PersonChart extends Component {
@@ -33,15 +34,23 @@ class PersonChart extends Component {
                 </div>
                 <div className="chart-view">
                     <h1>Person Search: Chart View</h1>
-                    <div className="video-trace">
-                        <div className="video-info">
-                            <p>With our technology, it is possible to search for a person within a specificed time frame and view the path of his/her phone signal.
-                                The video below is an example of a visualization that could be generated based on geolocation tracking.
-                                <a href="https://www.zeit.de/datenschutz/malte-spitz-data-retention" target="_blank" >  Citation</a>
-                            </p>
-                        </div>
-                        <VideoTrace />
+                    <i onClick={this.toggleHidden.bind(this)} class="far fa-play-circle"> <b>Video Demo</b> </i>
                     </div>
+                    {!this.state.isHidden &&
+                        <Modal>
+                            <div>
+                                <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
+                                <div className="video-trace">
+                                    <div className="video-info">
+                                        <p>With our technology, it is possible to search a location within a specificed time frame and view the paths of unique phone signals.
+                                            The video below is an example of a visualization that could be generated based on geolocation tracking.
+                                            <a href="https://www.zeit.de/datenschutz/malte-spitz-data-retention" target="_blank" >  Citation</a>
+                                        </p>
+                                    </div>
+                                    <VideoTrace />
+                                </div>
+                            </div>
+                        </Modal>}
                     <div className="form">
                         <div className="video-info">
                             <p>
@@ -63,14 +72,6 @@ class PersonChart extends Component {
                             <button>Search</button>
                         </div>
                     </div>
-
-                    <div className="chart-controls">
-                        <h2 onClick={this.toggleHidden.bind(this)} >
-                            Toggle Chart-View / Chart-Controls
-                                <i className="fas fa-sliders"></i>
-                            {!this.state.isHidden && <img src={searchcontrols} />}
-                        </h2>
-                    </div>
                     <div className="chart-container">
                         <ChartControlBarPerson />
                         <div className="chart">
@@ -78,7 +79,6 @@ class PersonChart extends Component {
                         </div>
                     </div>
                 </div>
-            </div>
         )
     }
 

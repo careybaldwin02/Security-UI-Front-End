@@ -8,46 +8,41 @@ import './App.css';
 
 
 class Settings extends Component {
-  render() {
-    return (
-    <div className = "container">
-        <div>
-        <SideBar />
-        <Header />
-        </div>
-        <div className = "page-wrap">
-        <div className="settings">
+    render() {
+        return (
+            <div className="container">
+                <div>
+                    <SideBar />
+                    <Header />
+                </div>
+                <div className="settings-container">
+                    <div className="settings">
 
-        <h1>Settings</h1>
-            <ul>
-                <li>
-                    <Link to = "/control-panel">
-                    <h3>Control Panel</h3>  
-                    </Link>                 
-                </li>
-                <li>
-                    {/* link to list of names, one name links to black list detail fig 8*/}
-                    <Link to = '/blacklist'>
-                    <h3>Access your Watchlist</h3>
-                    </Link>   
-                </li>
-                    {/* link to list of names */}
-                    <Link to = '/whitelist'>
-                    <h3>Access your Whitelist</h3>
-                    </Link>
-                <li>
-                    <Link to ='/list-controls'>
-                    <h3>Access your List Controls</h3>
-                    </Link>
-                </li>
-            </ul>
+                        <h1>Settings</h1>
+
+                        <Link to="/control-panel">
+                            <h3><b>Control Panel</b></h3>
+                        </Link>
+                        {/* link to list of names, one name links to black list detail fig 8*/}
+                        <Link to='/blacklist'>
+                            <h3><b>Access your Watchlist</b></h3>
+                        </Link>
+
+                        {/* link to list of names */}
+                        <Link to='/whitelist'>
+                            <h3><b>Access your Whitelist</b></h3>
+                        </Link>
+
+                        <Link to='/list-controls'>
+                            <h3><b>Access your List Controls</b></h3>
+                        </Link>
+
+                    </div>
+                </div>
 
             </div>
-        </div>
-
-      </div>
-    );
-  }
+        );
+    }
 }
 
 export default Settings;

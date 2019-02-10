@@ -14,7 +14,8 @@
 }
 
 img{
-  width: 90%;
+  padding: 10px 2%;
+  width: 96%;
   height: auto;
 }
 
@@ -34,6 +35,7 @@ button{
   flex-direction: column;
   width: 100%;
   height: auto !important;
+  padding-bottom: 40px;
 }
 
 /* Header Styles */
@@ -48,24 +50,31 @@ button{
   justify-content: space-around;
 }
 
-.header .favorites{
-  position: fixed;
+.header .favorites-icon{
+  position: absolute;
   top: 32px;
   left: 64px;
   z-index: 1000;
 }
 
 .header .emergency{
-  position: fixed;
+  position: absolute;
   top: 32px;
   right: 38px;
   z-index: 1000;
 }
 
 .header .alarm{
-  position: fixed;
+  position: absolute;
   top: 32px;
   right: 110px;
+  z-index: 1000;
+}
+
+.header .video{
+  position: absolute;
+  top: 32px;
+  right: 150px;
   z-index: 1000;
 }
 
@@ -246,6 +255,16 @@ input{
 }
 
 /* favorites styles */
+.favorites-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.favorites{
+  padding-top: 10px;
+  text-align: left;
+}
+
 .bws-container{
   display: flex;
   flex-direction: column;
@@ -293,14 +312,15 @@ input{
   color: black;
 }
 
-
 /* recent styles */
-.recent{
-  padding-top: 10px;
+.recent-container{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: left;
+  align-items: center;
+}
+.recent{
+  padding-top: 10px;
+  text-align: left;
 }
 
 .recent-item{
@@ -318,51 +338,46 @@ input{
 
 /* user styles */
 
-.ca-container{
+/* settings styles */
+.user-container{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: left space-between;
-  padding: 0 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
 }
 
-.user i{
-  margin-left: 10vw;
-}
-
-.user h2{
-  text-decoration: underline;
-}
-
-.user p{
-  text-align: left;
-  margin: 10px 10%;
-}
-
-.user ul{
+.user{
   list-style: none;
-  justify-content: left;
+  text-align: left;
+}
+
+.user-location{
+  text-align: left;
 }
 
 /* settings styles */
-.settings li{
+.settings-container{
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+}
+
+.settings{
   list-style: none;
+  text-align: left;
 }
 
 /* map styles */
-.map-container{
+.map{
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   flex-direction: column;
-  padding-top: 20px;
-  margin-top: 20px;
-  padding-left: 10%;
+  padding: 10px 8%;
 }
 
 .control-bar{
-  margin: 10px 8%;
+  margin: 10px 10%;
   display: flex;
   justify-content: space-between;
   align-items: top;
@@ -376,9 +391,6 @@ input{
   flex-direction: row;
 }
 
-.map-controls img{
-  padding: 10px;
-}
 
 .dd-wrapper{
   margin: 10px;
@@ -484,14 +496,6 @@ input{
   vertical-align: center;
 }
 
-.chart-view img{
-  width: 100%;
-}
-
-.chart-controls img{
-  padding: 15px;
-  width: 90%;
-}
 
 
 /* sidebar styles */
@@ -515,7 +519,7 @@ input{
 
 .bm-burger-button {
   margin: 36px;
-  position: fixed;
+  position: absolute;
   width: 20px;
   height: 20px;
 }
@@ -621,6 +625,15 @@ input{
   font-size: 1.6rem;
 }
 
+.fa-times{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 25px;
+  padding-right: 10%;
+  font-size: 1.4rem;
+  color: white;
+
+}
 
 /* Perp Demo Styles */
 
@@ -735,7 +748,7 @@ input{
     height: 200px;
   }
 
-  .header .favorites{
+  .header .favorites-icon{
     position: absolute;
     top: 36px;
     left: 50px;
@@ -760,4 +773,22 @@ input{
     top: 36px;
     right: 10px;
   }
+}
+
+.modal-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-box{
+  position: absolute;
+  background:#333842;
 }

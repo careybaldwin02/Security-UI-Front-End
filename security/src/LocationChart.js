@@ -9,7 +9,7 @@ import VideoTrace from './VideoTrace';
 import './App.css'
 import ChartControlBar from './ChartControlBar.js';
 import searchcontrols from './img/searchcontrols.jpg';
-
+import Modal from './Modal';
 
 class LocationChart extends Component {
     constructor() {
@@ -34,16 +34,25 @@ class LocationChart extends Component {
                     <Header />
                 </div>
                 <div className="chart-view">
+                <div>
                     <h1>Location Search: Chart View</h1>
-                    <div className="video-trace">
-                        <div className="video-info">
-                            <p>With our technology, it is possible to search a location within a specificed time frame and view the paths of unique phone signals.
-                                The video below is an example of a visualization that could be generated based on geolocation tracking.
-                                <a href="https://www.zeit.de/datenschutz/malte-spitz-data-retention" target="_blank" >  Citation</a>
-                            </p>
-                        </div>
-                        <VideoTrace />
+                    <i onClick={this.toggleHidden.bind(this)} class="far fa-play-circle"> <b>Video Demo</b> </i>
                     </div>
+                    {!this.state.isHidden &&
+                        <Modal>
+                            <div>
+                                <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
+                                <div className="video-trace">
+                                    <div className="video-info">
+                                        <p>With our technology, it is possible to search a location within a specificed time frame and view the paths of unique phone signals.
+                                            The video below is an example of a visualization that could be generated based on geolocation tracking.
+                                            <a href="https://www.zeit.de/datenschutz/malte-spitz-data-retention" target="_blank" >  Citation</a>
+                                        </p>
+                                    </div>
+                                    <VideoTrace />
+                                </div>
+                            </div>
+                        </Modal>}
 
                     <div className="form">
                         <div className="video-info">
@@ -69,13 +78,6 @@ class LocationChart extends Component {
                             Within this view the user could apply filters in order to achieve their desired information.
                             Please try the dropdown menu for some examples. 
                         </div>
-                    </div>
-                    <div className="chart-controls">
-                        <h2 onClick={this.toggleHidden.bind(this)} >
-                            Toggle Chart-View / Chart-Controls
-                                <i className="fas fa-sliders"></i>
-                            {!this.state.isHidden && <img src={searchcontrols} />}
-                        </h2>
                     </div>
                     <div className="chart-container">
                         <ChartControlBar />

@@ -7,7 +7,7 @@ const Header = () => {
         <div className="header">
 
             <Link to={'/favorites'}>
-                <div className="favorites">
+                <div className="favorites-icon">
                     <i className="fas fa-star"></i>
                 </div>
             </Link>
@@ -30,20 +30,23 @@ const Header = () => {
                 </a>
             </div>
 
+            <div className="video">
+                <i class="fas fa-video"></i>
+            </div>
 
             <div className="alarm">
-                <Link to={'/alarm'}>
+                {/* <Link to={'/alarm'}> */}
                     {/* <div className = "alarm">
                 Home Alarm
             </div> */}
                     <i class="fas fa-bell"></i>
                     {/* <i className="fas fa-house-damage"></i> */}
-                </Link>
+                {/* </Link> */}
             </div>
             <div className="emergency">
-                <Link to={'/emergency'}>
+                {/* <Link to={'/emergency'}> */}
                     <i className="fas fa-phone"> 911</i>
-                </Link>
+                {/* </Link> */}
             </div>
 
 

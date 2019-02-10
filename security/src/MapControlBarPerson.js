@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Select from 'react-select';
+import styled from "@emotion/styled";
 import Dropdown from './Dropdown';
+import mapcontrols from './img/mapcontrols.jpg';
+import Modal from './Modal';
+
 
 class MapControlBarPerson extends Component {
   constructor() {
     super()
     this.state = {
+      isHidden: true,
       visual: [
 
         {
@@ -42,6 +47,12 @@ class MapControlBarPerson extends Component {
         {
           id: 5,
           title: 'CCTV Cameras',
+          selected: false,
+          key: 'visual'
+        },
+        {
+          id: 6,
+          title: 'Crime Videos (22)',
           selected: false,
           key: 'visual'
         }
@@ -82,11 +93,31 @@ class MapControlBarPerson extends Component {
     }
   }
 
+  toggleHidden() {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
+  }
 
   render() {
     return (
       <div className="control-bar">
         <div className="map-control-buttons">
+        <div onClick={this.toggleHidden.bind(this)}>
+            <div>
+              <i className="fas fa-sliders"></i>
+            </div>
+          </div>
+
+          {!this.state.isHidden &&
+            <Modal>
+              <div>
+                <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
+                <div>
+                  <img src={mapcontrols} />}
+                </div>
+              </div>
+            </Modal>}
           <div className="dropdown">
             <Dropdown
               title="Select Visualization"

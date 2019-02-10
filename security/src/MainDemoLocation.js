@@ -10,6 +10,7 @@ import VideoTrace from './VideoTrace';
 import './App.css'
 import mapcontrols from './img/mapcontrols.jpg';
 import staticmap from './img/staticmap.png';
+import Modal from './Modal';
 
 class MainDemoLocation extends Component {
     constructor() {
@@ -33,17 +34,23 @@ class MainDemoLocation extends Component {
                     <Header />
                 </div>
                 <div className="main-demo-location">
-                    <h1>Location Search: Maps and Videos</h1>
-                    <div className="video-trace">
-                        <div className="video-info">
-                            <p>With our technology, it is possible to search a location within a specificed time frame and view the paths of unique phone signals.
-                                The video below is an example of a visualization that could be generated based on geolocation tracking.
-                                <a href="https://www.zeit.de/datenschutz/malte-spitz-data-retention" target="_blank" >  Citation</a>
-                            </p>
-                        </div>
-                        <VideoTrace />
+                    <div>
+                        <h1>Location Search: Maps and Videos</h1>
+                        <i onClick={this.toggleHidden.bind(this)} class="far fa-play-circle"> <b>Video Demo</b> </i>
                     </div>
-
+                    {!this.state.isHidden &&
+                        <Modal>
+                            <div className="video-trace">
+                                <div className="video-info">
+                                    <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
+                                    <p>With our technology, it is possible to search a location within a specificed time frame and view the paths of unique phone signals.
+                                        The video below is an example of a visualization that could be generated based on geolocation tracking.
+                                            <a href="https://www.zeit.de/datenschutz/malte-spitz-data-retention" target="_blank" >  Citation</a>
+                                    </p>
+                                </div>
+                                <VideoTrace />
+                            </div>
+                        </Modal>}
                     <div className="form">
                         <div className="video-info">
                             <p>
@@ -70,19 +77,18 @@ class MainDemoLocation extends Component {
                             Please try the dropdown menus on the map.
                         </div>
                     </div>
-                    <div className="map-controls">
+                    <br />
+                    {/* <div className="map-controls">
                         <h2 onClick={this.toggleHidden.bind(this)} >
                             Toggle Map-View / Map-Controls
                                 <i className="fas fa-sliders"></i>
                             {!this.state.isHidden && <img src={mapcontrols} />}
                         </h2>
-                    </div>
-                    
-                    <div>
-                        <MapControlBar />
-                        <div className="map">
-                            <img src={staticmap} />
-                        </div>
+                    </div> */}
+
+                    <MapControlBar />
+                    <div className="map">
+                        <img src={staticmap} />
                     </div>
                 </div>
             </div>
