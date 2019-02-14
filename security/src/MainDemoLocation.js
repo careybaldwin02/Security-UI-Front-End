@@ -40,9 +40,10 @@ class MainDemoLocation extends Component {
                     </div>
                     {!this.state.isHidden &&
                         <Modal>
+                            <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
                             <div className="video-trace">
                                 <div className="video-info">
-                                    <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
+                                    
                                     <p>With our technology, it is possible to search a location within a specificed time frame and view the paths of unique phone signals.
                                         The video below is an example of a visualization that could be generated based on geolocation tracking.
                                             <a href="https://www.zeit.de/datenschutz/malte-spitz-data-retention" target="_blank" >  Citation</a>
