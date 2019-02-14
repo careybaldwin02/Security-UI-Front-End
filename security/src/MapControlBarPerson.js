@@ -114,7 +114,7 @@ class MapControlBarPerson extends Component {
               <div>
                 <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
                 <div>
-                  <img src={mapcontrols} />}
+                  <img src={mapcontrols} />
                 </div>
               </div>
             </Modal>}

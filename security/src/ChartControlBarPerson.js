@@ -110,7 +110,7 @@ class ChartControlBarPerson extends Component {
           {!this.state.isHidden &&
             <Modal>
               <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
-              <img src={searchcontrols} />}
+              <img src={searchcontrols} />
             </Modal>}
           <div className="dropdown">
             <Dropdown

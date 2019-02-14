@@ -115,7 +115,7 @@ class MapControlBar extends Component {
           {!this.state.isHidden &&
             <Modal>
               <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
-              <img src={mapcontrols} />}
+              <img src={mapcontrols} />
             </Modal>}
           <div className="dropdown">
             <Dropdown
