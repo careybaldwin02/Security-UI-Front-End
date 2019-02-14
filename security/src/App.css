@@ -791,4 +791,7 @@ input{
 .modal-box{
   position: absolute;
   background:#333842;
+  padding-bottom: 20px;
+  margin: 20px auto;
+  width: 75%;
 }
