@@ -383,6 +383,69 @@ input{
   padding: 10px 8%;
 }
 
+.map-trails-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 8%;
+  background: #F0F0F0;
+}
+
+.map-trails{
+  width: 75%;
+}
+
+.search-results{
+  color: #333842;
+}
+
+.map-names{
+  text-align: left;
+  width: 25%;
+  padding: 10px 2% 10px 5%;
+  background: #F0F0F0;
+}
+
+.input-name{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-name input{
+  height: 15px;
+  width: 15px;
+}
+
+.js{
+  color: #F21320;
+}
+
+.ms{
+  color: #CE32E6;
+}
+
+.jn{
+  color: #249EAE;
+}
+
+.cs{
+  color: #3E1DAE;
+}
+
+.lv{
+  color: #59F02B;
+}
+
+.sw{
+  color: #409834;
+}
+
+.jt{
+  color: #984CFC;
+}
+
 .control-bar{
   margin: 10px 10%;
   display: flex;
@@ -697,6 +760,9 @@ input{
   list-style: none;
 }
 
+iframe{
+  max-width: 90%;
+}
 
 /* styles for individual docs */
 
@@ -747,41 +813,6 @@ input{
   animation: pulse 1.5s linear infinite;
 }
 
-
-/* ---------- Media Queries ----------- */
-/* Mobile Styles */
-@media only screen and (max-width: 600px) {
-  .header {
-    height: 200px;
-  }
-
-  .header .favorites-icon{
-    position: absolute;
-    top: 36px;
-    left: 50px;
-  }
-
-   .bm-burger-button{
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-    top: 36px;
-    left: 30px;
-  }
-
-  .header .alarm{
-    position: absolute;
-    top: 36px;
-    right: 70px;
-  }
-
-  .header .emergency{
-    position: absolute;
-    top: 36px;
-    right: 10px;
-  }
-}
-
 .modal-container{
   display: flex;
   justify-content: center;
@@ -823,4 +854,54 @@ input{
 
 .dropdown-modal i{
   padding: 20px 24px 0 0;
+}
+
+/* ---------- Media Queries ----------- */
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+  .map-trails-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px 8%;
+    background: #F7F7F7;
+  }
+
+  .map-names{
+    width: 100%;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 200px;
+  }
+
+  .header .favorites-icon{
+    position: absolute;
+    top: 36px;
+    left: 50px;
+  }
+
+   .bm-burger-button{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 36px;
+    left: 30px;
+  }
+
+  .header .alarm{
+    position: absolute;
+    top: 36px;
+    right: 70px;
+  }
+
+  .header .emergency{
+    position: absolute;
+    top: 36px;
+    right: 10px;
+  }
+
 }

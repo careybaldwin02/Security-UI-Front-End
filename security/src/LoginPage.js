@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SideBar from './SideBar';
-import Header from './Header';
 import './App.css';
 
 class LoginPage extends Component {

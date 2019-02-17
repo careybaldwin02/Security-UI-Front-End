@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 
 import SideBar from "./SideBar.js";
 import Header from "./Header";
-import MapsContainer from "./Map.js";
 import VideoTrace from "./VideoTrace";
 import MapControlBarPerson from "./MapControlBarPerson";
-import mapcontrols from "./img/mapcontrols.jpg";
 import "./App.css";
 import staticmap from "./img/staticmap.png";
 import Modal from './Modal';

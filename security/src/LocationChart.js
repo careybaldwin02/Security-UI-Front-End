@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 
 import SideBar from './SideBar.js';
 import Header from './Header';
@@ -8,7 +7,6 @@ import chart from './img/chart.jpg';
 import VideoTrace from './VideoTrace';
 import './App.css'
 import ChartControlBar from './ChartControlBar.js';
-import searchcontrols from './img/searchcontrols.jpg';
 import Modal from './Modal';
 
 class LocationChart extends Component {

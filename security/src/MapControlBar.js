@@ -1,15 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Select from 'react-select';
-import styled from "@emotion/styled";
 import Dropdown from './Dropdown';
 import mapcontrols from './img/mapcontrols.jpg';
 import Modal from './Modal';
 
-const CloseButton = styled.h2`
-  color: white;
-  cursor: pointer;
-`
 
 class MapControlBar extends Component {
   constructor() {
