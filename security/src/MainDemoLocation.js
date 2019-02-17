@@ -63,7 +63,7 @@ class MainDemoLocation extends Component {
                                 placeholder="West Hartford, CT"
                             />
                             <input
-                                placeholder="January 1, 2017 6:00 am - January 2, 6:00 am"
+                                placeholder="Monday 02/18/2019, 3:35 pm to 3:40 pm"
                             />
                         </div>
                         <div className="button-group">
@@ -95,8 +95,16 @@ class MainDemoLocation extends Component {
                             <img src={maptrails} />
                         </div>
                         <div className="map-names">
-                            <div>
-                                <h2 className="search-results"> <b>Search Results</b></h2>
+                            <div className="search-results">
+                                <h2><b>Search Results</b></h2>
+                                <p>Location: West Hartford [between Brunswick Ave. and Clifton Ave.]</p>
+                                <p>
+                                Monday 02/18/2019 
+                                <br />
+                                3:35 pm to 3:40 pm
+                                <br />
+                                Max Radius: 0.3 mi.
+                                </p>
                             </div>
                             <div>
                                 <div className="input-name js">

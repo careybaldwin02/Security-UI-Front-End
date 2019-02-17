@@ -386,7 +386,7 @@ input{
 .map-trails-container{
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   margin: 10px 8%;
   background: #F0F0F0;
@@ -398,6 +398,7 @@ input{
 
 .search-results{
   color: #333842;
+  padding: 10px;
 }
 
 .map-names{
@@ -407,10 +408,20 @@ input{
   background: #F0F0F0;
 }
 
+.map-names p{
+  font-size: 1rem;
+}
+
 .input-name{
+  margin: 0px;
+  padding: 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.input-name h5{
+  margin: 0;
 }
 
 .input-name input{
@@ -427,7 +438,7 @@ input{
 }
 
 .jn{
-  color: #249EAE;
+  color: #3AEAFF;
 }
 
 .cs{
@@ -444,6 +455,13 @@ input{
 
 .jt{
   color: #984CFC;
+}
+
+/* single trail */
+
+.jd{
+  color: #1186EF;
+  padding: 8px;
 }
 
 .control-bar{

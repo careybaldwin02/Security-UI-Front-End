@@ -7,6 +7,7 @@ import VideoTrace from "./VideoTrace";
 import MapControlBarPerson from "./MapControlBarPerson";
 import "./App.css";
 import staticmap from "./img/staticmap.png";
+import singletrail from "./img/singletrail.png"
 import Modal from './Modal';
 
 class MainDemoLocation extends Component {
@@ -62,7 +63,7 @@ class MainDemoLocation extends Component {
                         <div className="inputs">
                             <h5>Please Enter a Name</h5>
                             <input placeholder="John Doe" />
-                            <input placeholder="January 1, 2017 6:00 am - January 2, 6:00 am" />
+                            <input placeholder="Tuesday 02/05/2019, 4:35 am to 5:25 am" />
                         </div>
                         <div className="button-group">
                             <button>Search</button>
@@ -77,8 +78,30 @@ class MainDemoLocation extends Component {
                     </div> */}
                     <br />
                     <MapControlBarPerson />
-                    <div className="map">
+                    {/* <div className="map">
                         <img src={staticmap} />
+                    </div> */}
+                    <div className="map-trails-container">
+                        <div className="map-trails">
+                            <img src={singletrail} />
+                        </div>
+                        <div className="map-names">
+                            <div className="search-results">
+                                <h2><b>Search Results</b></h2>
+                                <p>Person: John Doe</p>
+                                <p>Tuesday 02/05/2019
+                                <br />
+                                    4:35 am to 5:25 am
+                                <br />
+                                    Max Radius: 2.5 mi.
+                                </p>
+                            </div>
+                            <div>
+                                <div className="input-name jd">
+                                    <h5>John Doe</h5>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
