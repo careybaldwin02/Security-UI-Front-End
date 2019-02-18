@@ -131,7 +131,7 @@ class LocationChart extends Component {
                                         <p>3:36:19</p>
                                     </div>
                                     <div className="col col-loc">
-                                        <p>41.760412, -72.733007</p>
+                                        <p>41.760536, -72.733112</p>
                                     </div>
                                     <div className="col col-dur">
                                         <div className="dark"></div>
@@ -163,7 +163,7 @@ class LocationChart extends Component {
                                         <p>3:37:11</p>
                                     </div>
                                     <div className="col col-loc">
-                                        <p>41.760412, -72.733007</p>
+                                        <p>41.760224, -72.733791</p>
                                     </div>
                                     <div className="col col-dur">
                                         <div className="med"></div>
@@ -195,7 +195,7 @@ class LocationChart extends Component {
                                         <p>3:37:32</p>
                                     </div>
                                     <div className="col col-loc">
-                                        <p>41.760412, -72.733007</p>
+                                        <p>41.760345, -72.733291</p>
                                     </div>
                                     <div className="col col-dur">
                                         <div className="light"></div>
@@ -227,7 +227,7 @@ class LocationChart extends Component {
                                         <p>3:38:05</p>
                                     </div>
                                     <div className="col col-loc">
-                                        <p>41.760412, -72.733007</p>
+                                        <p>41.760625, -72.733091</p>
                                     </div>
                                     <div className="col col-dur">
                                         <div className="dark"></div>
@@ -291,7 +291,7 @@ class LocationChart extends Component {
                                         <p>3:38:47</p>
                                     </div>
                                     <div className="col col-loc">
-                                        <p>41.760412, -72.733007</p>
+                                        <p>41.760294, -72.733204</p>
                                     </div>
                                     <div className="col col-dur">
                                         <div className="med"></div>
@@ -323,7 +323,7 @@ class LocationChart extends Component {
                                         <p>3:39:52</p>
                                     </div>
                                     <div className="col col-loc">
-                                        <p>41.760412, -72.733007</p>
+                                        <p>41.760104, -72.733028</p>
                                     </div>
                                     <div className="col col-dur">
                                         <div className="light"></div>
@@ -353,7 +353,7 @@ class LocationChart extends Component {
                                             <p><b>Center:</b> <br /> 41.760412, -72.733007</p>
                                         </div>
                                         <div>
-                                            <p><b>Duplicate Interval:</b> <br /> 30 sec</p>
+                                            <p><b>Duplicate Interval:</b> <br /> 1 day</p>
                                         </div>
                                         <div>
                                             <p><b>Excluded:</b>  <br /> Frequent Visitors</p>
