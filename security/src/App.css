@@ -604,6 +604,10 @@ input{
   width: 100%;
 }
 
+.chart input:checked {
+  background-color: white;
+}
+
 .chart-top{
   display: flex;
   justify-content: center;
@@ -722,6 +726,7 @@ input{
 }
 
 .bottom-buttons p{
+  font-size: 1rem;
   text-align: left;
   padding-left:  15px;
 }
