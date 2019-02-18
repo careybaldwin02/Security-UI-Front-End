@@ -348,18 +348,24 @@ class LocationChart extends Component {
                             <div className="chart-bottom">
                                 <div className="global">
                                     <h4><b>Global Parameters</b></h4>
-                                    <p>Center: 41.760412, -72.733007</p>
-                                    <p>Duplicate Interval: 30 sec</p>
-                                    <p>Excluded:  Whitelist</p>
+                                    <div className="parameters">
+                                        <div>
+                                            <p><b>Center:</b> <br /> 41.760412, -72.733007</p>
+                                        </div>
+                                        <div>
+                                            <p><b>Duplicate Interval:</b> <br /> 30 sec</p>
+                                        </div>
+                                        <div>
+                                            <p><b>Excluded:</b>  <br /> Frequent Visitors</p>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="bottom-buttons">
                                     <div className="button-column">
-                                        <button><b>Save Logs</b></button>
-                                        <p>Click to save these records for access at a later date</p>
+                                        <button><b>Save This Log</b></button>
                                     </div>
                                     <div className="button-column">
-                                        <button><b>View Logs</b></button>
-                                        <p>Click to access previously saved logs</p>
+                                        <button><b>View Saved Logs</b></button>
                                     </div>
                                 </div>
                             </div>
