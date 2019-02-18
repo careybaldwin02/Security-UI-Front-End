@@ -97,7 +97,7 @@ class MainDemoLocation extends Component {
                         <div className="map-names">
                             <div className="search-results">
                                 <h2><b>Search Results</b></h2>
-                                <p>Location: West Hartford [between Brunswick Ave. and Clifton Ave.]</p>
+                                <p>Location: West Hartford, between Brunswick Ave. and Clifton Ave.</p>
                                 <p>
                                 Monday 02/18/2019 
                                 <br />
@@ -107,27 +107,30 @@ class MainDemoLocation extends Component {
                                 </p>
                             </div>
                             <div>
+                                <div className="input-name selector">
+                                    <input type='checkbox' checked/><p>See all trails</p>
+                                </div>
                                 <div className="input-name js">
-                                    <input type='checkbox' /><h5>John Smith</h5>
+                                    <input type='checkbox' checked/><h5>John Smith</h5>
                                 </div>
                                 <div className="input-name ms">
-                                    <input type='checkbox' /><h5>Maria Sanchez</h5>
+                                    <input type='checkbox' checked /><h5>Maria Sanchez</h5>
                                 </div>
                                 <div className="input-name sw">
-                                    <input type='checkbox' /><h5>Simon Waters</h5>
+                                    <input type='checkbox' checked/><h5>Simon Waters</h5>
                                 </div>
 
                                 <div className="input-name jn">
-                                    <input type='checkbox' /><h5>Josh Newman</h5>
+                                    <input type='checkbox' checked/><h5>Josh Newman</h5>
                                 </div>
                                 <div className="input-name cs">
-                                    <input type='checkbox' /><h5>Chuck Santiago</h5>
+                                    <input type='checkbox' checked/><h5>Chuck Santiago</h5>
                                 </div>
                                 <div className="input-name lv">
-                                    <input type='checkbox' /><h5>Laura Valine</h5>
+                                    <input type='checkbox' checked/><h5>Laura Valine</h5>
                                 </div>
                                 <div className="input-name jt">
-                                    <input type='checkbox' /><h5>James Thompson</h5>
+                                    <input type='checkbox' checked/><h5>James Thompson</h5>
                                 </div>
                             </div>
                         </div>

@@ -97,8 +97,11 @@ class MainDemoLocation extends Component {
                                 </p>
                             </div>
                             <div>
+                                <div className="input-name selector">
+                                    <input type='checkbox' /><p>See all trails</p>
+                                </div>
                                 <div className="input-name jd">
-                                    <h5>John Doe</h5>
+                                    <input type='checkbox' checked /><h5>John Doe</h5>
                                 </div>
                             </div>
                         </div>

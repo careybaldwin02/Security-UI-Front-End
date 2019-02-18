@@ -394,6 +394,7 @@ input{
 
 .map-trails{
   width: 75%;
+  margin-top: 20px;
 }
 
 .search-results{
@@ -429,6 +430,14 @@ input{
   width: 15px;
 }
 
+.selector{
+  color: #333842;
+}
+
+.selector p{
+  font-size: 1.2rem;
+}
+
 .js{
   color: #F21320;
 }
@@ -461,7 +470,6 @@ input{
 
 .jd{
   color: #1186EF;
-  padding: 8px;
 }
 
 .control-bar{
