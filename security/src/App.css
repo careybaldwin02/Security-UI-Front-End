@@ -561,6 +561,8 @@ input{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 15px 0px;
+  width: 88%;
 }
 
 .chart-container .chart-control-bar{
@@ -592,7 +594,143 @@ input{
   vertical-align: center;
 }
 
+.chart p{
+  font-size: .8rem;
+}
 
+.chart{
+  border: 1px solid white;
+  margin: 15px 0px;
+  width: 100%;
+}
+
+.chart-top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-arrow-down{
+  font-size: 1rem;
+  padding:  0 10px;
+}
+
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  height: 45px;
+  border-bottom: 1px solid white;
+}
+
+.row-title{
+  height: 80px;
+}
+
+.col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 10%;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.col-title p{
+  transform: rotate(45deg);
+  padding: 5px;
+}
+
+.col-name-1{
+  width: 15%;
+}
+
+.col-name{
+  width: 15%;
+}
+
+.col-time-1{
+  width: 15%;
+}
+
+.col-time{
+  width: 15%;
+}
+
+.col input{
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.dark{
+  height: 20px;
+  width: 40%;
+  background-color: #244763;
+}
+
+.med{
+  height: 20px;
+  width: 40%;
+  background-color: #4485b9;
+}
+
+.light{
+  height: 20px;
+  width: 40%;
+  background-color: #a7c6df;
+}
+
+.bottom-buttons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid white;
+  font-size: .8rem;
+}
+
+.chart-bottom{
+  display: flex;
+}
+
+.global{
+  width: 60%;
+  padding: 10px 5%;
+}
+
+.global h4{
+  text-align: left;
+  margin: 10px auto;
+  font-size: 1.4rem;
+}
+
+.global p{
+  text-align: left;
+  font-size: 1rem;
+}
+
+.bottom-buttons{
+  width: 40%;
+  display: flex;
+}
+
+.button-column{
+  padding: 0 15px;
+}
+
+.bottom-buttons button{
+  font-size: .8rem;
+}
+
+.bottom-buttons p{
+  text-align: left;
+  padding-left:  15px;
+}
+
+.fa-exclamation-triangle{
+  color: yellow;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
 
 /* sidebar styles */
 

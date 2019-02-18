@@ -114,14 +114,14 @@ class MainDemoLocation extends Component {
                                     <input type='checkbox' checked/><h5>John Smith</h5>
                                 </div>
                                 <div className="input-name ms">
-                                    <input type='checkbox' checked /><h5>Maria Sanchez</h5>
+                                    <input type='checkbox' checked /><h5>28-E0-2C-0B-92-B2</h5>
                                 </div>
                                 <div className="input-name sw">
                                     <input type='checkbox' checked/><h5>Simon Waters</h5>
                                 </div>
 
                                 <div className="input-name jn">
-                                    <input type='checkbox' checked/><h5>Josh Newman</h5>
+                                    <input type='checkbox' checked/><h5>DC-9B-9C-60-3E-38</h5>
                                 </div>
                                 <div className="input-name cs">
                                     <input type='checkbox' checked/><h5>Chuck Santiago</h5>
