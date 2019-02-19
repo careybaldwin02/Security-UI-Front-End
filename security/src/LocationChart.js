@@ -348,23 +348,44 @@ class LocationChart extends Component {
                             <div className="chart-bottom">
                                 <div className="global">
                                     <h4><b>Global Parameters</b></h4>
-                                    <div className="parameters">
-                                        <div>
-                                            <p><b>Center:</b> <br /> 41.760412, -72.733007</p>
+                                    <div className="row">
+                                        <div className="col">
+                                            <p><b>Center</b></p>  
                                         </div>
-                                        <div>
-                                            <p><b>Duplicate Interval:</b> <br /> 1 day</p>
+
+                                        <div className="col">
+                                            <p>41.760412, -72.733007</p>
                                         </div>
-                                        <div>
-                                            <p><b>Excluded:</b>  <br /> Frequent Visitors</p>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col">
+                                            <p><b>Radius</b></p>
+                                        </div>
+                                        <div className="col">
+                                            <p>0.3 miles</p>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col">
+                                            <p><b>Duplicate Interval</b></p>
+                                        </div>
+                                        <div className="col">
+                                            <p>1 day</p>
+                                        </div>
+                                    </div>
+                                    <div className="row">
+                                        <div className="col">
+                                            <p><b>Excluded</b></p>
+                                        </div>
+
+                                        <div className="col">
+                                            <p>Frequent Visitors</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="bottom-buttons">
                                     <div className="button-column">
                                         <button><b>Save This Log</b></button>
-                                    </div>
-                                    <div className="button-column">
                                         <button><b>View Saved Logs</b></button>
                                     </div>
                                 </div>

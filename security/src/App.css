@@ -640,6 +640,10 @@ input{
   border-right: 1px solid white;
 }
 
+.person-chart-contents .col{
+  width: 25%;
+}
+
 .col-title{
   overflow: hidden;
 }
@@ -665,7 +669,7 @@ input{
   width: 15%;
 }
 
-.col input{
+.chart input{
   height: 1.2rem;
   width: 1.2rem;
 }
@@ -690,6 +694,7 @@ input{
 
 .bottom-buttons{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
@@ -702,48 +707,54 @@ input{
 }
 
 .global{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  padding: 10px 5%;
+  width: 70%;
 }
 
-.parameters{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.parameters div{
-  padding: 10px 20px;
+.global .col{
+  width: 50%;
+  text-align: left;
 }
 
 .global h4{
-  text-align: left;
+  text-align: center;
   margin: 10px auto;
   font-size: 1.4rem;
 }
 
-.global p{
+.chart-bottom p{
   text-align: left;
   font-size: 1rem;
 }
 
 .bottom-buttons{
-  width: 40%;
+  width: 30%;
   display: flex;
 }
 
-.bottom-buttons button{
+.button-column button{
   font-size: .8rem;
+  width: 50%;
 }
 
-/* .bottom-buttons p{
-  font-size: .9rem;
-  text-align: left;
-} */
+.person-actions{
+  width: 30%;
+}
+
+.person-actions .button-column{
+  display: flex;
+  flex-direction: column;
+  margin: 40px 4% 0 8%;
+}
+
+.input-column{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 4% 0 8%;
+}
+
+.person-input{
+  display: flex;
+}
 
 .fa-exclamation-triangle{
   color: yellow;
