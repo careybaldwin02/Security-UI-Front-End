@@ -52,7 +52,7 @@ class LoginPage extends Component {
 
     return (
       <div className="container">
-        <div>
+        <div className="login">
 
           <div className="perptrac">
             <div className="title-logo">
@@ -68,10 +68,6 @@ class LoginPage extends Component {
 
         </div>
         <div className="Login">
-
-          <div className="form">
-
-
             <div className="login-group">
 
               {/* ---------------- change this to allow access ---------------------*/}
@@ -93,13 +89,12 @@ class LoginPage extends Component {
           </button> */}
             <div className="dev-team-link">
               <Link to={"development-team"}>
-                <p>Development Team</p>
+                <p>Development Team Info.</p>
               </Link>
             </div>
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }

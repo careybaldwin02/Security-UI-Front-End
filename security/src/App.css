@@ -148,8 +148,7 @@ a{
 
 
 /* styles for login form */
-
-.form{
+.login-group{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -946,10 +945,7 @@ input{
 }
 
 .dev-team-link{
-  text-align: left;
-  width: 170px;
-  background-color: #414653;
-  padding: 10px 20px;
+
 }
 
 .summary-docs{
