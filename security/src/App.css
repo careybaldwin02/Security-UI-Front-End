@@ -374,6 +374,15 @@ input{
   text-align: left;
 }
 
+.adjacent{
+  display: flex;
+  align-items:  center;
+}
+
+.adjacent i{
+  padding-left: 8px;
+}
+
 /* map styles */
 .map{
   display: flex;

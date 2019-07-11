@@ -51,57 +51,54 @@ class LoginPage extends Component {
     // NOTE: use data-attributes for easier E2E testing
 
     return (
-      <div className = "container">
-      <div>
-      {/* <SideBar />
-      <Header /> */}
+      <div className="container">
+        <div>
 
-        <div className = "perptrac">
-        <div className = "title-logo">
-        <h1>TrailTracker </h1>
-        <i class="fas fa-map-pin faa-pulse animated"></i>
-        {/* <i class="fas fa-map-marker-alt faa-pulse animated"> </i> */}
-        {/* <i className="fas fa-globe-americas faa-pulse animated"></i> */}
-        {/* <i className="fab fa-product-hunt faa-pulse animated"></i> */}
+          <div className="perptrac">
+            <div className="title-logo">
+              <h1>TrailTracker </h1>
+              <i class="fas fa-map-pin faa-pulse animated"></i>
+              {/* <i class="fas fa-map-marker-alt faa-pulse animated"> </i> */}
+              {/* <i className="fas fa-globe-americas faa-pulse animated"></i> */}
+              {/* <i className="fab fa-product-hunt faa-pulse animated"></i> */}
+            </div>
+
+            <p>The Next Generation of Physical Surveillance</p>
+          </div>
+
         </div>
-        <p>
-            The Next Generation of Physical Surveillance
-        </p>
-        </div>
+        <div className="Login">
 
-      </div>
-      <div className="Login">
-
-        <div className = "form">
+          <div className="form">
 
 
-          <div className = "login-group">
+            <div className="login-group">
 
-{/* ---------------- change this to allow access ---------------------*/}
-          <Link to = {`/main`}>
-          <button 
-          type="submit" 
-          value="Log In" 
-          data-test="submit">Enter Demo Site
-          </button>
-          </Link>
-          {/* <button 
+              {/* ---------------- change this to allow access ---------------------*/}
+              <Link to={`/main`}>
+                <button
+                  type="submit"
+                  value="Log In"
+                  data-test="submit">Enter Demo Site
+                </button>
+              </Link>
+              <div>
+                <iframe src="https://drive.google.com/file/d/1Q6BZ4dEatNZFja__DSg20WSkCL5Cmzi4/preview" width="440" height="360"></iframe>
+              </div>
+
+              {/* <button 
           type="submit" 
           value="Log In" 
           data-test="submit">Register
           </button> */}
-          </div>
-          <br />
-          <div className = "dev-team-link">
-          <Link to = {"development-team"}>
-            <p>
-              Read more about the development team
-          </p>
-          </Link>
+            <div className="dev-team-link">
+              <Link to={"development-team"}>
+                <p>Development Team</p>
+              </Link>
+            </div>
+            </div>
           </div>
         </div>
-
-      </div>
       </div>
     );
   }

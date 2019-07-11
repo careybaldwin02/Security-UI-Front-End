@@ -3,12 +3,26 @@ import { Link } from "react-router-dom";
 
 import SideBar from "./SideBar";
 import Header from "./Header";
+import Modal from "./Modal";
+import UserVideo from "./UserVideo";
 import MapsContainer from "./Map.js";
 import MapControlBar from "./MapControlBar.js";
 import staticmap from "./img/staticmap.png";
 import "./App.css";
 
 class UserInfo extends Component {
+    constructor() {
+        super();
+        this.state = {
+            isHidden: true // for map controls
+        };
+    }
+    toggleHidden() {
+        this.setState({
+            isHidden: !this.state.isHidden
+        });
+    }
+
     render() {
         return (
             <div className="container">
@@ -22,8 +36,24 @@ class UserInfo extends Component {
                         {/* <Link to="/manage-subscription"> */}
                         <h3>Manage Subscription</h3>
                         {/* </Link> */}
-                        <h3>My Videos</h3>
-                        {/* link to list of names, one name links to black list detail fig 8*/}
+                        <div className="adjacent">
+                            <h3>My Videos </h3>
+                            <i onClick={this.toggleHidden.bind(this)} class="far fa-play-circle"> demo </i>
+                        </div>
+                        {!this.state.isHidden &&
+                            <Modal>
+                                <div>
+                                    <i onClick={this.toggleHidden.bind(this)} className="fas fa-times"></i>
+                                    <div className="video-trace">
+                                        <UserVideo />
+                                    </div>
+                                </div>
+                            </Modal>}
+
+
+
+
+
                         <h3>Parental Controls</h3>
                         {/* <Link to={'/personal-profile'}> */}
                         <h3>Personal Profile</h3>
