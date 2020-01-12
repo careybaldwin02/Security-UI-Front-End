@@ -187,11 +187,12 @@ input{
 }
 
 .main input{
-  width: 320px;
+  width: 360px;
   margin: 10px;
 }
 
 .inputs{
+  width: 360px;
   margin: 25px 0;
 }
 
@@ -224,6 +225,17 @@ input{
   font-size: 2rem;
   padding: 0 5px 10px 5px;
 } */
+
+
+/* Person and Location Search */
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
 
 
 /* about styles */
@@ -545,7 +557,7 @@ input{
 
 .video-info{
   text-align: left;
-  width: 60%;
+  width: 500px;
 }
 
 /* styles for popup on map */
