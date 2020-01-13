@@ -11,7 +11,7 @@
     "bower": "^1.8.8",
     "gh-pages": "^2.0.1",
     "google-maps-react": "^2.0.2",
-    "react": "^16.6.3",
+    "react": "^16.12.0",
     "react-burger-menu": "^2.5.4",
     "react-dom": "^16.12.0",
     "react-dropdown": "^1.6.4",
