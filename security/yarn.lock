@@ -7330,9 +7330,10 @@ react-fontawesome@^1.7.1:
   dependencies:
     prop-types "^15.5.6"
 
-react-hamburger-menu@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/react-hamburger-menu/-/react-hamburger-menu-1.1.1.tgz#36fb5d38b55f3babb472f94f8cc3640345bfa9ae"
+react-hamburger-menu@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-hamburger-menu/-/react-hamburger-menu-1.2.1.tgz#bcaca08bf7d1ae96aa97553828765dce8f912eeb"
+  integrity sha512-It5Jque8bx9lYn8q/NFtu9Ci20fBMsyunFSp06ZGgWXbMZlTFrN0IxKguGZ0igYQr6RvJ3S9CN3rTjrObmq/Cw==
 
 react-input-autosize@^2.2.2:
   version "2.2.2"
