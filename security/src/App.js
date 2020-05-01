@@ -3,6 +3,7 @@ import { Route, Link } from 'react-router-dom';
 import './App.css';
 
 import LoginPage from './LoginPage.js';
+import InfectionControl from './InfectionControl.js';
 import MainPage from './MainPage.js';
 import Favorites from './Favorites.js';
 import RecentSearches from './RecentSearches';
@@ -43,6 +44,12 @@ class App extends Component {
 
         <Route path = "/main" render={props =>
         (<MainPage {...props}
+        />
+        )}
+        />
+
+        <Route path = "/ic" render={props =>
+        (<InfectionControl {...props}
         />
         )}
         />

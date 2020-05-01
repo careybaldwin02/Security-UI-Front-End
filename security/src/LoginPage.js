@@ -52,8 +52,8 @@ class LoginPage extends Component {
 
     return (
       <div className="container">
-        <div className="login">
 
+        <div className="login">
           <div className="perptrac">
             <div className="title-logo">
               <h1>TrailTracker </h1>
@@ -62,20 +62,29 @@ class LoginPage extends Component {
               {/* <i className="fas fa-globe-americas faa-pulse animated"></i> */}
               {/* <i className="fab fa-product-hunt faa-pulse animated"></i> */}
             </div>
-
-            <p>The Next Generation of Physical Surveillance</p>
           </div>
-
         </div>
-        <div className="Login">
-            <div className="login-group">
 
+
+        <div className="Login">
+            <div className="infection-control">
+            <Link to={`/ic`}>
+                <button
+                  type="submit"
+                  value="Log In"
+                  data-test="submit">TrailTracker for Infection Control
+                </button>
+              </Link>
+
+            </div>
+
+            <div className="login-group">
               {/* ---------------- change this to allow access ---------------------*/}
               <Link to={`/main`}>
                 <button
                   type="submit"
                   value="Log In"
-                  data-test="submit">Enter Demo Site
+                  data-test="submit">TrailTracker for Personal Security
                 </button>
               </Link>
               <div>
