@@ -67,7 +67,7 @@ class LoginPage extends Component {
 
 
         <div className="Login">
-            <div className="infection-control">
+            {/* <div className="infection-control">
             <Link to={`/ic`}>
                 <button
                   type="submit"
@@ -76,7 +76,7 @@ class LoginPage extends Component {
                 </button>
               </Link>
 
-            </div>
+            </div> */}
 
             <div className="login-group">
               {/* ---------------- change this to allow access ---------------------*/}
@@ -84,7 +84,7 @@ class LoginPage extends Component {
                 <button
                   type="submit"
                   value="Log In"
-                  data-test="submit">TrailTracker for Personal Security
+                  data-test="submit">Enter Demo Site
                 </button>
               </Link>
               <div>
